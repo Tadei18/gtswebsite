@@ -1,36 +1,14 @@
 /* =========================================================================
    GTS RISK ADVISORY  ·  HEAT MAP
-   Africa risk heat map — tile-grid SVG, hover tooltip, click-to-dossier
-   panel, filters, mobile responsive.
+   Africa risk heat map — real-geography SVG, hover tooltip, click-to-dossier
+   panel, filters. Mobile uses a vertical list fallback (see initMobile).
+   Depends on assets/js/africa-map.js for the shared loader.
    ========================================================================= */
 
 (function () {
   'use strict';
 
-  const TILE_SIZE = 56;
-  const TILE_GAP = 4;
-  const GRID = [
-    // Row 0 — North Africa
-    [null, null, null, 'MAR', 'DZA', 'TUN', 'LBY', 'EGY', null, null],
-    // Row 1
-    [null, null, 'ESH', 'MRT', null, 'MLI', 'NER', 'TCD', 'SDN', 'ERI'],
-    // Row 2 — West Africa / Sahel
-    [null, 'CPV', 'SEN', 'GMB', 'GIN', 'BFA', 'NGA', 'CAF', 'SSD', 'DJI'],
-    // Row 3
-    ['GNB', 'SLE', 'LBR', 'CIV', 'GHA', 'TGO', 'BEN', 'CMR', 'ETH', 'SOM'],
-    // Row 4 — Central / East
-    [null, null, null, null, null, 'GNQ', 'GAB', 'COG', 'UGA', 'KEN'],
-    // Row 5
-    [null, null, null, null, null, 'STP', null, 'COD', 'RWA', 'TZA'],
-    // Row 6
-    [null, null, null, null, null, null, 'AGO', 'ZMB', 'BDI', 'MWI'],
-    // Row 7 — Southern Africa
-    [null, null, null, null, null, null, 'NAM', 'ZWE', 'MOZ', 'MDG'],
-    // Row 8
-    [null, null, null, null, null, null, null, 'BWA', 'SWZ', 'MUS'],
-    // Row 9
-    [null, null, null, null, null, null, null, null, 'ZAF', 'LSO'],
-  ];
+  const MOBILE_BREAKPOINT = 900;
 
   const STATE = {
     countries: null,           // map of iso → country
@@ -44,13 +22,21 @@
   document.addEventListener('DOMContentLoaded', async () => {
     const canvas = document.getElementById('heatmap-canvas');
     if (!canvas) return;
+    if (!window.GTSAfricaMap) {
+      console.error('GTSAfricaMap loader missing.');
+      return;
+    }
 
     try {
-      const res = await fetch('/data/heat-map.json');
-      const data = await res.json();
+      const data = await window.GTSAfricaMap.loadHeatMapData();
       STATE.countries = {};
       data.countries.forEach((c) => { STATE.countries[c.iso] = c; });
-      renderMap(canvas);
+
+      if (window.innerWidth < MOBILE_BREAKPOINT) {
+        renderMobileList(canvas);
+      } else {
+        await renderMap(canvas);
+      }
       bindFilters();
     } catch (err) {
       canvas.innerHTML = '<p style="color:var(--color-ink-low);font-family:var(--font-mono);font-size:14px;letter-spacing:.08em">Unable to load heat-map data. Serve the site over HTTP (e.g. <code>python -m http.server</code>) to enable JSON loading.</p>';
@@ -59,84 +45,76 @@
   });
 
   /* -------------------------------------------------------------- */
-  /*  Render tile-grid SVG                                          */
+  /*  Render real Africa SVG                                        */
   /* -------------------------------------------------------------- */
-  function renderMap(canvas) {
-    const cols = GRID[0].length;
-    const rows = GRID.length;
-    const w = cols * (TILE_SIZE + TILE_GAP);
-    const h = rows * (TILE_SIZE + TILE_GAP);
+  async function renderMap(canvas) {
+    const svg = await window.GTSAfricaMap.injectMap(canvas, STATE.countries);
+    if (!svg) return;
 
-    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
     svg.setAttribute('role', 'img');
-    svg.setAttribute('aria-label', 'Africa risk heat map — tile grid');
+    svg.setAttribute('aria-label', 'Africa risk heat map');
 
-    GRID.forEach((row, r) => {
-      row.forEach((iso, c) => {
-        if (!iso) return;
-        const country = STATE.countries[iso];
-        if (!country) return;
-        const x = c * (TILE_SIZE + TILE_GAP);
-        const y = r * (TILE_SIZE + TILE_GAP);
-        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-        g.setAttribute('data-iso', iso);
-        g.setAttribute('data-risk', country.risk);
-        g.setAttribute('data-region', country.region);
-        g.setAttribute('tabindex', '0');
-        g.setAttribute('role', 'button');
-        g.setAttribute('aria-label', `${country.name} — ${country.risk} risk`);
-        g.style.cursor = 'pointer';
+    svg.querySelectorAll('path.country').forEach((p) => {
+      const iso = p.getAttribute('data-iso');
+      const c = STATE.countries[iso];
+      if (!c) return;
+      p.setAttribute('tabindex', '0');
+      p.setAttribute('role', 'button');
+      p.setAttribute('aria-label', `${c.name} — ${c.risk} risk`);
+      bindCountry(p, c);
+    });
+  }
 
-        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-        rect.setAttribute('class', 'country');
-        rect.setAttribute('x', x);
-        rect.setAttribute('y', y);
-        rect.setAttribute('width', TILE_SIZE);
-        rect.setAttribute('height', TILE_SIZE);
-        rect.setAttribute('fill', riskColor(country.risk));
-        g.appendChild(rect);
+  /* -------------------------------------------------------------- */
+  /*  Mobile fallback — vertical list grouped by region             */
+  /* -------------------------------------------------------------- */
+  function renderMobileList(canvas) {
+    const byRegion = {};
+    Object.values(STATE.countries).forEach((c) => {
+      const r = c.region || 'Other';
+      (byRegion[r] = byRegion[r] || []).push(c);
+    });
+    Object.keys(byRegion).forEach((r) => {
+      byRegion[r].sort((a, b) => a.name.localeCompare(b.name));
+    });
 
-        const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        label.setAttribute('class', 'country-label');
-        label.setAttribute('x', x + TILE_SIZE / 2);
-        label.setAttribute('y', y + TILE_SIZE / 2 + 4);
-        label.textContent = iso;
-        g.appendChild(label);
+    const html = Object.keys(byRegion).sort().map((region) => `
+      <div class="heatmap-mobile__group" data-region="${region}">
+        <div class="heatmap-mobile__region">${region}</div>
+        <div class="heatmap-mobile__cards">
+          ${byRegion[region].map((c) => `
+            <button class="heatmap-mobile__card" data-iso="${c.iso}" data-risk="${c.risk}">
+              <span class="heatmap-mobile__name">${c.name}</span>
+              <span class="chip chip--risk chip--risk-${c.risk}">${c.risk}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
 
-        bindTile(g, country);
-        svg.appendChild(g);
+    canvas.innerHTML = `<div class="heatmap-mobile">${html}</div>`;
+    canvas.querySelectorAll('.heatmap-mobile__card').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const c = STATE.countries[btn.getAttribute('data-iso')];
+        if (c) openDossier(c);
       });
     });
-
-    canvas.appendChild(svg);
-  }
-
-  function riskColor(r) {
-    return {
-      low:      'var(--risk-low)',
-      moderate: 'var(--risk-moderate)',
-      elevated: 'var(--risk-elevated)',
-      high:     'var(--risk-high)',
-      extreme:  'var(--risk-extreme)',
-    }[r] || 'var(--risk-na)';
   }
 
   /* -------------------------------------------------------------- */
-  /*  Tile interactions                                             */
+  /*  Country interactions                                          */
   /* -------------------------------------------------------------- */
-  function bindTile(g, country) {
+  function bindCountry(el, country) {
     const tooltip = document.getElementById('heatmap-tooltip');
-    g.addEventListener('mousemove', (e) => showTooltip(tooltip, country, e.clientX, e.clientY));
-    g.addEventListener('mouseleave', () => hideTooltip(tooltip));
-    g.addEventListener('focus', () => {
-      const rect = g.getBoundingClientRect();
-      showTooltip(tooltip, country, rect.left + rect.width / 2, rect.top);
+    el.addEventListener('mousemove', (e) => showTooltip(tooltip, country, e.clientX, e.clientY));
+    el.addEventListener('mouseleave', () => hideTooltip(tooltip));
+    el.addEventListener('focus', () => {
+      const r = el.getBoundingClientRect();
+      showTooltip(tooltip, country, r.left + r.width / 2, r.top);
     });
-    g.addEventListener('blur', () => hideTooltip(tooltip));
-    g.addEventListener('click', () => openDossier(country));
-    g.addEventListener('keydown', (e) => {
+    el.addEventListener('blur', () => hideTooltip(tooltip));
+    el.addEventListener('click', () => openDossier(country));
+    el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         openDossier(country);
@@ -145,6 +123,7 @@
   }
 
   function showTooltip(tt, c, x, y) {
+    if (!tt) return;
     tt.innerHTML = `
       <div class="heatmap-tooltip__iso">— ${c.iso} · ${c.region || 'N/A'}</div>
       <div class="heatmap-tooltip__name">${c.name}</div>
@@ -158,6 +137,7 @@
   }
 
   function hideTooltip(tt) {
+    if (!tt) return;
     tt.classList.remove('is-visible');
     tt.setAttribute('aria-hidden', 'true');
   }
@@ -232,8 +212,7 @@
       });
     });
 
-    // Scroll panel into view on mobile
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < MOBILE_BREAKPOINT) {
       panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
@@ -252,16 +231,31 @@
   }
 
   function applyFilters() {
-    document.querySelectorAll('.heatmap-canvas g[data-iso]').forEach((g) => {
-      const iso = g.getAttribute('data-iso');
-      const c = STATE.countries[iso];
+    const isVisible = (c) => {
+      if (!c) return false;
       const matchRegion = !STATE.filters.region || c.region === STATE.filters.region;
       const matchRisk   = !STATE.filters.risk   || c.risk === STATE.filters.risk;
       const q = STATE.filters.search;
       const matchSearch = !q || c.name.toLowerCase().includes(q) || c.iso.toLowerCase().includes(q);
-      const visible = matchRegion && matchRisk && matchSearch;
-      g.style.opacity = visible ? '1' : '0.15';
-      g.style.pointerEvents = visible ? 'auto' : 'none';
+      return matchRegion && matchRisk && matchSearch;
+    };
+
+    // Desktop SVG paths
+    document.querySelectorAll('.heatmap-canvas path.country').forEach((p) => {
+      const c = STATE.countries[p.getAttribute('data-iso')];
+      const v = isVisible(c);
+      p.style.opacity = v ? '1' : '0.12';
+      p.style.pointerEvents = v ? 'auto' : 'none';
+    });
+
+    // Mobile list cards
+    document.querySelectorAll('.heatmap-mobile__card').forEach((btn) => {
+      const c = STATE.countries[btn.getAttribute('data-iso')];
+      btn.style.display = isVisible(c) ? '' : 'none';
+    });
+    document.querySelectorAll('.heatmap-mobile__group').forEach((g) => {
+      const visibleCount = g.querySelectorAll('.heatmap-mobile__card:not([style*="display: none"])').length;
+      g.style.display = visibleCount === 0 ? 'none' : '';
     });
   }
 })();
