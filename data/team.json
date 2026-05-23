@@ -1,0 +1,22 @@
+{
+  "team": [
+    {
+      "name": "James Otieno",
+      "role": "Managing Director",
+      "bio": "Two decades leading corporate security and risk programmes across East and Southern Africa, including senior in-house roles with multinational banks and energy operators. Known for translating complex risk into executive-ready decisions and for the quiet discipline of his engagement style.",
+      "photo": null
+    },
+    {
+      "name": "Amina Kassim",
+      "role": "Head of Intelligence",
+      "bio": "Background in political risk analysis with both government and private-sector intelligence units. Leads the GTS Intelligence Desk, including the Risk Heat Map, country reporting practice, and daily monitoring service. Published widely on African elections and governance risk.",
+      "photo": null
+    },
+    {
+      "name": "Peter Mwangi",
+      "role": "Director of Operations",
+      "bio": "Former special operations and corporate security leadership across multiple sectors. Oversees GTS field operations — manned guarding, command centres, executive protection, and event security — with relentless focus on selection, training, and operational discipline.",
+      "photo": null
+    }
+  ]
+}

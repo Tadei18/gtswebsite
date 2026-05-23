@@ -336,6 +336,115 @@
   line-height: 1.55;
 }
 
+/* Leadership card — card-lift on hover (works for both photo and monogram) */
+.leader {
+  transition: transform var(--d-med) var(--ease-out);
+  will-change: transform;
+}
+.leader:hover { transform: translateY(-4px); }
+
+/* Monogram placeholder tile */
+.monogram {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: border-color var(--d-med) var(--ease-out);
+}
+.monogram::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(201,169,97,0.08) 0%, transparent 60%);
+  transition: background var(--d-med) var(--ease-out);
+  pointer-events: none;
+}
+.monogram__initials {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(3.5rem, 8vw, 5rem);
+  line-height: 1;
+  color: var(--color-ink-high);
+  letter-spacing: 0;
+  /* Compensate for trailing letter-spacing during the entrance animation
+     so the glyphs read as visually centred even mid-tween. */
+  padding-left: 0.4em;
+  text-indent: -0.4em;
+  transition: letter-spacing var(--d-med) var(--ease-out);
+}
+.monogram__rule {
+  width: 32px;
+  height: 1px;
+  background: var(--color-gold);
+}
+.monogram__bracket {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  stroke: var(--color-gold);
+  stroke-width: 1.5;
+  fill: none;
+  pointer-events: none;
+  transition: stroke-width var(--d-med) var(--ease-out);
+}
+.monogram__bracket--tl { top: var(--s-3); left: var(--s-3); }
+.monogram__bracket--tr { top: var(--s-3); right: var(--s-3); }
+.monogram__bracket--br { bottom: var(--s-3); right: var(--s-3); }
+.monogram__bracket--bl { bottom: var(--s-3); left: var(--s-3); }
+
+/* Hover */
+.leader:hover .monogram { border-color: var(--color-gold); }
+.leader:hover .monogram::before {
+  background: radial-gradient(circle at center, rgba(201,169,97,0.14) 0%, transparent 60%);
+}
+.leader:hover .monogram__bracket { stroke-width: 2; }
+.leader:hover .monogram__initials { letter-spacing: -0.02em; }
+
+/* Entrance state — overridden once .is-in-view is added by the observer */
+.monogram__initials { opacity: 0; letter-spacing: 0.4em; }
+.monogram__bracket path { stroke-dasharray: 22; stroke-dashoffset: 22; }
+
+.leader.is-in-view .monogram__initials {
+  animation: gts-monogram-initials 800ms cubic-bezier(0.22, 1, 0.36, 1) 200ms forwards;
+}
+.leader.is-in-view .monogram__bracket--tl path { animation: gts-bracket-draw 400ms ease-out 300ms forwards; }
+.leader.is-in-view .monogram__bracket--tr path { animation: gts-bracket-draw 400ms ease-out 380ms forwards; }
+.leader.is-in-view .monogram__bracket--br path { animation: gts-bracket-draw 400ms ease-out 460ms forwards; }
+.leader.is-in-view .monogram__bracket--bl path { animation: gts-bracket-draw 400ms ease-out 540ms forwards; }
+
+@keyframes gts-monogram-initials {
+  from { opacity: 0; letter-spacing: 0.4em; }
+  to   { opacity: 1; letter-spacing: 0; }
+}
+@keyframes gts-bracket-draw {
+  from { stroke-dashoffset: 22; }
+  to   { stroke-dashoffset: 0; }
+}
+
+/* Reduced motion — show final state, drop entrance + card lift, keep colour transitions */
+@media (prefers-reduced-motion: reduce) {
+  .leader { transition: none; }
+  .leader:hover { transform: none; }
+  .monogram__initials,
+  .leader.is-in-view .monogram__initials {
+    opacity: 1;
+    letter-spacing: 0;
+    animation: none;
+  }
+  .monogram__bracket path,
+  .leader.is-in-view .monogram__bracket path {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+}
+
 /* -------------------------------------------------------------------------
    SERVICE DETAIL — Hero with image
    ------------------------------------------------------------------------- */
