@@ -31,6 +31,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="preload" as="image" href="/assets/img/hero/nairobi-cityscape.webp" type="image/webp" fetchpriority="high">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -242,7 +243,15 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
-        <img src="https://picsum.photos/seed/gts-hero-africa/1920/1200" alt="" loading="eager">
+        <picture>
+          <source srcset="/assets/img/hero/nairobi-cityscape.webp" type="image/webp">
+          <img src="/assets/img/hero/nairobi-cityscape.jpg"
+               alt=""
+               loading="eager"
+               decoding="async"
+               fetchpriority="high"
+               width="1920" height="1080">
+        </picture>
       </div>
       <div class="container hero__inner reveal">
         <span class="eyebrow">Intelligence · Resilience · Protection</span>

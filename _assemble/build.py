@@ -265,7 +265,15 @@ def _home_body():
     <!-- HERO -->
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
-        <img src="https://picsum.photos/seed/gts-hero-africa/1920/1200" alt="" loading="eager">
+        <picture>
+          <source srcset="/assets/img/hero/nairobi-cityscape.webp" type="image/webp">
+          <img src="/assets/img/hero/nairobi-cityscape.jpg"
+               alt=""
+               loading="eager"
+               decoding="async"
+               fetchpriority="high"
+               width="1920" height="1080">
+        </picture>
       </div>
       <div class="container hero__inner reveal">
         <span class="eyebrow">Intelligence · Resilience · Protection</span>
@@ -537,6 +545,8 @@ def _home_body():
     </section>
 """
 
+
+HOME_PRELOAD = '  <link rel="preload" as="image" href="/assets/img/hero/nairobi-cityscape.webp" type="image/webp" fetchpriority="high">\n'
 
 HOME_JSONLD = """  <script type="application/ld+json">
   {
@@ -1770,7 +1780,7 @@ def main():
     render('index.html',
            'GTS Risk Advisory — Intelligence-Driven Security Across Africa',
            'A premier security and risk consulting firm delivering tailored protection, risk intelligence, and operational resilience across Kenya, East Africa, and the continent.',
-           '/', _home_body(), extra_head=HOME_JSONLD)
+           '/', _home_body(), extra_head=HOME_PRELOAD + HOME_JSONLD)
 
     # ---- About
     render('about/index.html',
