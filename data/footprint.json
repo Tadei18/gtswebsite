@@ -1,0 +1,16 @@
+{
+  "operating_countries": [
+    { "iso": "KEN", "name": "Kenya", "hq": true },
+    { "iso": "UGA", "name": "Uganda" },
+    { "iso": "TZA", "name": "Tanzania" },
+    { "iso": "RWA", "name": "Rwanda" },
+    { "iso": "ETH", "name": "Ethiopia" },
+    { "iso": "ZAF", "name": "South Africa" },
+    { "iso": "NGA", "name": "Nigeria" },
+    { "iso": "GHA", "name": "Ghana" },
+    { "iso": "EGY", "name": "Egypt" },
+    { "iso": "COD", "name": "DRC" },
+    { "iso": "ZMB", "name": "Zambia" },
+    { "iso": "MOZ", "name": "Mozambique" }
+  ]
+}
