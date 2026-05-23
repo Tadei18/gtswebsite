@@ -1,0 +1,261 @@
+{
+  "edition": "Q2 2026",
+  "updated": "2026-04-15",
+  "countries": [
+    {
+      "iso": "KEN", "name": "Kenya", "region": "East Africa",
+      "risk": "moderate",
+      "scores": { "security": 3, "political": 3, "economic": 3, "operational": 3 },
+      "summary": "Stable operating environment with localized protest and crime concerns.",
+      "overview": "Kenya remains the regional commercial hub of East Africa, with deep capital markets, a stable currency regime, and a maturing regulatory framework. The country balances strong private-sector activity against pockets of political volatility, urban crime, and periodic protest activity tied to cost-of-living pressures and reform debates.",
+      "key_risks": [
+        "Politically motivated protests and occasional civil disturbance, particularly in central Nairobi and major coastal centres",
+        "Persistent urban crime — opportunistic theft, carjacking risk in specific corridors, residential burglary",
+        "Localized terrorism exposure along the north-eastern border with Somalia",
+        "Heightened cyber-enabled fraud targeting financial services and telco channels"
+      ],
+      "outlook": "Operating conditions are expected to remain broadly stable through 2026, with episodic political tension around fiscal policy. Devolution-era county dynamics continue to shape sub-national operating context. Investors should expect continued business but plan for occasional disruption windows.",
+      "recommendations": [
+        "Maintain detailed journey management protocols for travel outside Nairobi metropolitan area",
+        "Subscribe to a daily monitoring brief for early warning on protest activity",
+        "Conduct refreshed fraud awareness training across customer-facing functions",
+        "Vet new staff and vendors with appropriate depth — verification fluency in local registries matters"
+      ]
+    },
+    {
+      "iso": "UGA", "name": "Uganda", "region": "East Africa",
+      "risk": "moderate",
+      "scores": { "security": 3, "political": 3, "economic": 3, "operational": 3 },
+      "summary": "Stable security environment with controlled political space and pockets of insurgency risk in the west.",
+      "overview": "Uganda offers stable macro conditions, a growing energy sector tied to oil development, and a generally permissive operating environment for established businesses. Political space remains controlled, and security tensions persist along the western border with the eastern DRC where ADF activity periodically affects civilian areas.",
+      "key_risks": [
+        "Insurgency activity in western border areas (ADF spillover from DRC)",
+        "Politically motivated restrictions on dissent and civil society — operational implications for NGOs",
+        "Urban crime in Kampala — opportunistic and residential",
+        "Currency and economic management volatility tied to oil sector development cycles"
+      ],
+      "outlook": "Stable operating environment through 2026, with elevated attention on the western border corridor and the political environment ahead of any electoral cycle. Energy-sector investment activity will continue to drive operational risk patterns.",
+      "recommendations": [
+        "Route security plans for any movement to or through western border regions",
+        "NGO operators should maintain robust compliance and political-risk monitoring",
+        "Cash-handling and cash-in-transit risk warrants careful programme design",
+        "Engage with embedded advisory for sustained presence in higher-risk districts"
+      ]
+    },
+    {
+      "iso": "TZA", "name": "Tanzania", "region": "East Africa",
+      "risk": "low",
+      "scores": { "security": 4, "political": 4, "economic": 3, "operational": 4 },
+      "summary": "One of the more stable operating environments in East Africa, with steady economic growth.",
+      "overview": "Tanzania offers one of East Africa's more stable security environments and a steadily growing economy, supported by infrastructure investment and a generally pragmatic policy stance under current leadership. The Zanzibar archipelago carries its own political and security dynamics distinct from the mainland.",
+      "key_risks": [
+        "Low-level criminality in urban centres — opportunistic theft and residential exposure",
+        "Occasional political tension on Zanzibar around electoral periods",
+        "Periodic regulatory uncertainty affecting specific sectors (mining, telecommunications)",
+        "Cross-border movement and customs friction with neighbours"
+      ],
+      "outlook": "Stable conditions are expected to continue through 2026, with operational risk concentrated around regulatory navigation rather than direct security threat. Tourism and infrastructure sectors will remain growth-oriented.",
+      "recommendations": [
+        "Build regulatory engagement into ongoing operational planning",
+        "Standard urban security precautions for residential and operational personnel",
+        "Monitor Zanzibar-specific dynamics separately during electoral windows"
+      ]
+    },
+    {
+      "iso": "RWA", "name": "Rwanda", "region": "East Africa",
+      "risk": "low",
+      "scores": { "security": 4, "political": 4, "economic": 4, "operational": 4 },
+      "summary": "Exceptionally low day-to-day security risk; tightly managed political space.",
+      "overview": "Rwanda combines exceptionally low day-to-day security risk with a highly organized state, strong regulatory predictability, and continued growth orientation. Political space is tightly controlled, and external dynamics — particularly Rwanda's relationship with the eastern DRC — shape the broader regional risk picture.",
+      "key_risks": [
+        "Tightly managed political environment — operational implications for civil society and media-facing engagements",
+        "Regional security tensions tied to eastern DRC dynamics",
+        "Concentrated decision-making affects regulatory predictability at the margin",
+        "Limited but non-zero risk around the border with the DRC"
+      ],
+      "outlook": "Stable, predictable operating environment expected through 2026. Continued attention to regional dynamics is warranted, particularly for organizations with cross-border operations.",
+      "recommendations": [
+        "Standard security precautions are sufficient for most commercial operations",
+        "NGOs and media-facing organizations should engage thoughtfully on operational scope and messaging",
+        "Cross-border movement planning should account for evolving DRC dynamics"
+      ]
+    },
+    {
+      "iso": "ETH", "name": "Ethiopia", "region": "East Africa",
+      "risk": "elevated",
+      "scores": { "security": 2, "political": 2, "economic": 2, "operational": 2 },
+      "summary": "Active conflict in several regions; complex political transition continuing.",
+      "overview": "Ethiopia continues to navigate a complex political transition, with active conflict and humanitarian concerns in multiple regions — including Amhara, Oromia, and parts of the Tigray border zone. Economic reform efforts, including currency liberalization, are underway but bring their own adjustment pressures. The operating context demands engaged, intelligence-led decision-making.",
+      "key_risks": [
+        "Active conflict and security incidents in Amhara, parts of Oromia, and border zones",
+        "Communal and ethnic tensions affecting specific regional operating contexts",
+        "Currency and macroeconomic volatility through ongoing reform implementation",
+        "Travel security risk extending well beyond Addis Ababa metropolitan area",
+        "Humanitarian access constraints in conflict-affected regions"
+      ],
+      "outlook": "The 2026 operating environment is expected to remain elevated, with conflict dynamics, reform pressures, and political negotiation continuing to shape risk. Substantive in-country presence requires structured travel security, robust monitoring, and pre-positioned crisis response.",
+      "recommendations": [
+        "Structured travel security and journey management for all movement outside Addis Ababa",
+        "Daily monitoring briefs with explicit regional coverage",
+        "Pre-positioned evacuation planning and crisis response capability",
+        "Vetting and partner diligence calibrated to operating region",
+        "Embedded advisory recommended for sustained substantive presence"
+      ]
+    },
+    {
+      "iso": "NGA", "name": "Nigeria", "region": "West Africa",
+      "risk": "high",
+      "scores": { "security": 2, "political": 2, "economic": 2, "operational": 2 },
+      "summary": "Concentrated security risks across multiple regions; major commercial market.",
+      "overview": "Nigeria remains West Africa's largest economy and a major commercial market, but operations there require carefully calibrated security and risk programmes. Risk varies sharply by region — from the established commercial environment of Lagos to active insurgency in the north-east, banditry in the north-west and middle belt, and kidnap-for-ransom across much of the country.",
+      "key_risks": [
+        "Active Boko Haram and ISWAP insurgency in the north-east",
+        "Banditry, kidnap-for-ransom across the north-west and middle belt",
+        "Niger Delta militancy and energy-sector security risk",
+        "Urban crime and kidnap risk in major cities including Lagos and Abuja",
+        "Communal and inter-ethnic conflict in specific regions",
+        "Cyber-enabled financial fraud at scale"
+      ],
+      "outlook": "Risk levels are expected to remain elevated through 2026, with persistent kidnap-for-ransom dynamics and continued insurgency activity in the north. Lagos and Abuja remain commercially viable with appropriate security programmes; substantive operations elsewhere require structured risk management.",
+      "recommendations": [
+        "Comprehensive corporate security programmes for all permanent presence",
+        "Mandatory journey management for travel outside major commercial centres",
+        "Executive protection programmes for principals where threat assessment indicates",
+        "Subscriber-grade intelligence support including situational risk analysis",
+        "Pre-tested evacuation and crisis response capability"
+      ]
+    },
+    {
+      "iso": "GHA", "name": "Ghana", "region": "West Africa",
+      "risk": "low",
+      "scores": { "security": 4, "political": 4, "economic": 3, "operational": 4 },
+      "summary": "Among the more stable operating environments in West Africa; macroeconomic pressures notable.",
+      "overview": "Ghana remains among the most stable operating environments in West Africa, with a strong democratic tradition, peaceful electoral transitions, and a relatively open commercial environment. The country has navigated significant macroeconomic pressures and an IMF programme, with ongoing fiscal adjustment shaping the near-term context.",
+      "key_risks": [
+        "Macroeconomic pressures, fiscal adjustment, and currency volatility",
+        "Localized criminality in urban centres",
+        "Northern border insecurity spillover from Sahel dynamics",
+        "Periodic protest activity tied to economic conditions",
+        "Sector-specific regulatory adjustments as part of reform programmes"
+      ],
+      "outlook": "Operating environment is expected to remain stable through 2026, with macro and fiscal dynamics shaping commercial decisions more than direct security risk. Northern regions warrant heightened attention as Sahel security dynamics evolve.",
+      "recommendations": [
+        "Standard corporate security programmes for urban and commercial centres",
+        "Heightened journey management for travel to northern regions",
+        "Macro and fiscal monitoring as part of operational planning",
+        "Vetting and due diligence calibrated to the regulatory adjustment context"
+      ]
+    },
+    {
+      "iso": "ZAF", "name": "South Africa", "region": "Southern Africa",
+      "risk": "elevated",
+      "scores": { "security": 2, "political": 3, "economic": 2, "operational": 3 },
+      "summary": "Major economy with significant violent crime, infrastructure, and political risk dynamics.",
+      "overview": "South Africa combines Africa's most developed financial and commercial infrastructure with significant security and operational risks. Violent crime, infrastructure failures (power, water), labour-relations dynamics, and a complex political environment all shape the operating picture. Investment and operating activity remain substantial — but require well-designed security and continuity programmes.",
+      "key_risks": [
+        "Violent crime including residential burglary, vehicle hijacking, and armed robbery",
+        "Major infrastructure failures, particularly electricity supply (load-shedding cycles)",
+        "Cash-in-transit and supply chain attacks at scale",
+        "Periodic civil unrest tied to economic conditions and political flashpoints",
+        "Labour-relations volatility in specific sectors",
+        "Cyber-enabled financial crime and corporate fraud"
+      ],
+      "outlook": "Conditions are expected to remain elevated through 2026, with continued infrastructure pressures and persistent crime dynamics. Major commercial centres remain operationally viable with structured security programmes. Reform momentum could shift the medium-term picture.",
+      "recommendations": [
+        "Comprehensive residential, executive, and corporate security programmes",
+        "Layered protection for supply chain and cash-handling operations",
+        "Infrastructure resilience built into business continuity planning",
+        "Vetting and process-control diligence calibrated to local risk patterns",
+        "Subscriber-grade intelligence covering security and macro dynamics"
+      ]
+    },
+    {
+      "iso": "EGY", "name": "Egypt", "region": "North Africa",
+      "risk": "moderate",
+      "scores": { "security": 3, "political": 3, "economic": 2, "operational": 3 },
+      "summary": "Stable security in major centres; macroeconomic and currency pressures notable.",
+      "overview": "Egypt offers stable security in major commercial centres, with controlled political space and active state security capacity. The macroeconomic environment remains under pressure, with currency adjustments, inflation, and continued IMF engagement shaping the operating context. The Sinai retains a distinct, higher-risk security profile.",
+      "key_risks": [
+        "Macroeconomic and currency pressure; inflation impact on operating costs",
+        "Higher security risk profile in the Sinai peninsula",
+        "Controlled political environment with implications for civil society and media",
+        "Bureaucratic and regulatory complexity for new market entry",
+        "Periodic regional security spillover risk tied to broader Middle East dynamics"
+      ],
+      "outlook": "Stable operating conditions in commercial centres are expected to continue, with macroeconomic adjustment pressures remaining the dominant operational concern through 2026. Sinai operations require structured security planning.",
+      "recommendations": [
+        "Standard urban security programmes for Cairo and Alexandria operations",
+        "Structured security planning for any Sinai or border operations",
+        "Macro and currency monitoring integrated into commercial planning",
+        "Engaged regulatory navigation for new market entry or expansion"
+      ]
+    },
+    {
+      "iso": "COD", "name": "DRC", "region": "Central Africa",
+      "risk": "extreme",
+      "scores": { "security": 1, "political": 2, "economic": 2, "operational": 1 },
+      "summary": "Active conflict in eastern provinces; significant commercial activity continues despite extreme risk.",
+      "overview": "The Democratic Republic of Congo presents one of the most challenging operating environments on the continent. Active conflict in the eastern provinces — including North Kivu, South Kivu, and Ituri — continues to displace populations and generate humanitarian crisis. The mining sector remains commercially significant, but operations there require structured, sustained security and risk management.",
+      "key_risks": [
+        "Active armed conflict in North Kivu, South Kivu, Ituri (M23, ADF, multiple armed groups)",
+        "Kidnap-for-ransom and personal security risk extending across multiple regions",
+        "Significant humanitarian crisis with civilian displacement and access constraints",
+        "Limited state security presence in conflict-affected regions",
+        "Regulatory and operational complexity in the mining and resource sectors",
+        "Communicable disease outbreaks periodically affecting specific regions"
+      ],
+      "outlook": "The 2026 picture is expected to remain extremely challenging in eastern regions, with significant risk persisting throughout the year. Kinshasa and other major commercial centres remain operationally viable with strong programmes; substantive eastern operations require embedded security capability.",
+      "recommendations": [
+        "Embedded security and intelligence capability for any substantive eastern operations",
+        "Comprehensive executive protection and journey management programmes",
+        "Pre-positioned evacuation capability and 24/7 crisis response",
+        "Vetting and partner diligence calibrated to extreme-risk operating context",
+        "Daily monitoring briefs with explicit regional coverage"
+      ]
+    },
+    { "iso": "BDI", "name": "Burundi", "region": "East Africa", "risk": "elevated", "summary": "Political controls remain tight; localized security concerns persist." },
+    { "iso": "SSD", "name": "South Sudan", "region": "East Africa", "risk": "extreme", "summary": "Active conflict dynamics; severely constrained operating environment." },
+    { "iso": "SOM", "name": "Somalia", "region": "East Africa", "risk": "extreme", "summary": "Active Al-Shabaab insurgency; constrained operating environment outside hardened compounds." },
+    { "iso": "DJI", "name": "Djibouti", "region": "East Africa", "risk": "moderate", "summary": "Stable security environment supported by multiple international military footprints." },
+    { "iso": "ERI", "name": "Eritrea", "region": "East Africa", "risk": "elevated", "summary": "Highly controlled operating environment; limited civil and commercial space." },
+    { "iso": "SDN", "name": "Sudan", "region": "East Africa", "risk": "extreme", "summary": "Active conflict between SAF and RSF; severely constrained operating environment." },
+    { "iso": "MAR", "name": "Morocco", "region": "North Africa", "risk": "low", "summary": "Among Africa's more stable operating environments; growing commercial hub." },
+    { "iso": "DZA", "name": "Algeria", "region": "North Africa", "risk": "moderate", "summary": "Stable security in major centres; complex regulatory environment for commerce." },
+    { "iso": "TUN", "name": "Tunisia", "region": "North Africa", "risk": "moderate", "summary": "Operating environment stable in commercial centres; political and economic dynamics fluid." },
+    { "iso": "LBY", "name": "Libya", "region": "North Africa", "risk": "extreme", "summary": "Fragmented political control; significant security risk across most regions." },
+    { "iso": "SEN", "name": "Senegal", "region": "West Africa", "risk": "moderate", "summary": "Among West Africa's more stable environments; periodic political flashpoints." },
+    { "iso": "CIV", "name": "Côte d'Ivoire", "region": "West Africa", "risk": "moderate", "summary": "Stable operating environment; growing regional commercial hub." },
+    { "iso": "MLI", "name": "Mali", "region": "West Africa", "risk": "extreme", "summary": "Severe insurgency and political instability across multiple regions." },
+    { "iso": "BFA", "name": "Burkina Faso", "region": "West Africa", "risk": "extreme", "summary": "Significant Sahel insurgency activity; constrained operating environment." },
+    { "iso": "NER", "name": "Niger", "region": "West Africa", "risk": "extreme", "summary": "Post-coup operating environment with significant security and political risk." },
+    { "iso": "TCD", "name": "Chad", "region": "Central Africa", "risk": "high", "summary": "Limited security control in border regions; humanitarian pressures considerable." },
+    { "iso": "CAF", "name": "Central African Republic", "region": "Central Africa", "risk": "extreme", "summary": "Active armed group dynamics outside Bangui; humanitarian crisis ongoing." },
+    { "iso": "CMR", "name": "Cameroon", "region": "Central Africa", "risk": "elevated", "summary": "Active separatist and Boko Haram dynamics in specific regions." },
+    { "iso": "GAB", "name": "Gabon", "region": "Central Africa", "risk": "moderate", "summary": "Transitional political environment following recent political shifts." },
+    { "iso": "COG", "name": "Republic of Congo", "region": "Central Africa", "risk": "moderate", "summary": "Stable operating environment for commercial activity; political space constrained." },
+    { "iso": "AGO", "name": "Angola", "region": "Southern Africa", "risk": "moderate", "summary": "Reform-oriented operating environment; macro pressures notable." },
+    { "iso": "ZMB", "name": "Zambia", "region": "Southern Africa", "risk": "low", "summary": "Stable operating environment; major mining sector exposure." },
+    { "iso": "MOZ", "name": "Mozambique", "region": "Southern Africa", "risk": "elevated", "summary": "Insurgency in Cabo Delgado province; stable commercial activity in south." },
+    { "iso": "ZWE", "name": "Zimbabwe", "region": "Southern Africa", "risk": "moderate", "summary": "Operating environment stable; macroeconomic and currency dynamics complex." },
+    { "iso": "BWA", "name": "Botswana", "region": "Southern Africa", "risk": "low", "summary": "Among the most stable operating environments on the continent." },
+    { "iso": "NAM", "name": "Namibia", "region": "Southern Africa", "risk": "low", "summary": "Stable operating environment; growing energy and resource sector activity." },
+    { "iso": "MWI", "name": "Malawi", "region": "Southern Africa", "risk": "low", "summary": "Generally stable operating environment; macroeconomic pressures notable." },
+    { "iso": "LSO", "name": "Lesotho", "region": "Southern Africa", "risk": "moderate", "summary": "Operating environment stable; periodic political flashpoints." },
+    { "iso": "SWZ", "name": "Eswatini", "region": "Southern Africa", "risk": "moderate", "summary": "Operating environment generally stable; periodic protest activity." },
+    { "iso": "MDG", "name": "Madagascar", "region": "Southern Africa", "risk": "moderate", "summary": "Stable in major centres; rural security and infrastructure considerations." },
+    { "iso": "MUS", "name": "Mauritius", "region": "Southern Africa", "risk": "low", "summary": "Among the most stable operating environments in the region." },
+    { "iso": "TGO", "name": "Togo", "region": "West Africa", "risk": "moderate", "summary": "Operating environment stable in commercial centres; political space limited." },
+    { "iso": "BEN", "name": "Benin", "region": "West Africa", "risk": "moderate", "summary": "Stable operating environment; northern border security warrants attention." },
+    { "iso": "LBR", "name": "Liberia", "region": "West Africa", "risk": "moderate", "summary": "Stable post-conflict environment; institutional capacity continues to develop." },
+    { "iso": "SLE", "name": "Sierra Leone", "region": "West Africa", "risk": "moderate", "summary": "Operating environment stable; macroeconomic pressures notable." },
+    { "iso": "GIN", "name": "Guinea", "region": "West Africa", "risk": "elevated", "summary": "Transitional political environment; significant resource sector activity continues." },
+    { "iso": "GMB", "name": "Gambia", "region": "West Africa", "risk": "low", "summary": "Stable operating environment in the immediate region." },
+    { "iso": "GNB", "name": "Guinea-Bissau", "region": "West Africa", "risk": "elevated", "summary": "Recurrent political instability and weak institutional capacity." },
+    { "iso": "MRT", "name": "Mauritania", "region": "West Africa", "risk": "moderate", "summary": "Operating environment stable; Sahel border dynamics warrant attention." },
+    { "iso": "CPV", "name": "Cape Verde", "region": "West Africa", "risk": "low", "summary": "Among Africa's most stable operating environments." },
+    { "iso": "STP", "name": "São Tomé & Príncipe", "region": "Central Africa", "risk": "low", "summary": "Stable operating environment; limited risk profile." },
+    { "iso": "GNQ", "name": "Equatorial Guinea", "region": "Central Africa", "risk": "moderate", "summary": "Stable operating environment; commercial activity concentrated in energy sector." },
+    { "iso": "RWS", "name": "Western Sahara", "region": "North Africa", "risk": "na", "summary": "Disputed territory; limited dossier coverage." },
+    { "iso": "ESH", "name": "Western Sahara", "region": "North Africa", "risk": "na", "summary": "Disputed territory; limited dossier coverage." }
+  ]
+}

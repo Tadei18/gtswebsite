@@ -1,0 +1,164 @@
+<!--
+============================================================================
+GTS RISK ADVISORY  ·  BLOG POST TEMPLATE
+============================================================================
+HOW TO USE THIS FILE:
+
+1.  Copy this file to /insights/posts/<your-slug>.html
+    Example: /insights/posts/2026-06-banking-fraud-trends.html
+
+2.  Edit the metadata at the top of the file:
+        - <title>          The browser tab + SEO title (under 60 chars)
+        - <meta name="description">   Search-result description (under 155 chars)
+        - <link rel="canonical">   Update to match the new file path
+
+3.  Edit the article content inside the <article> block:
+        - Change the eyebrow, h1, category, author, date, read time
+        - Replace the body paragraphs with your own
+        - Optionally add <blockquote>, <figure>, <h2>/<h3> sub-headings, <ul> lists
+
+4.  Add a new entry to /data/posts.json (KEEP THE EXISTING ONES, JUST APPEND
+    A NEW ONE TO THE TOP OF THE "posts" ARRAY):
+
+        {
+          "slug": "<your-slug>",
+          "title": "<Your title>",
+          "excerpt": "<1-2 sentence excerpt for cards>",
+          "category": "Political Risk | Operational Risk | Training | …",
+          "author": "<Your name>",
+          "author_role": "<Your role, e.g. GTS Intelligence Desk>",
+          "date": "YYYY-MM-DD",
+          "read_time": "<n> min",
+          "cover": "/insights/assets/<slug>.jpg",
+          "file": "/insights/posts/<your-slug>.html",
+          "featured": false,
+          "tags": ["tag1", "tag2"],
+          "body_html": ""    // can leave empty since the HTML lives in the file
+        }
+
+5.  Upload BOTH files (the new .html and the updated posts.json) via cPanel
+    File Manager.
+
+6.  The post will automatically appear in /insights/ and in any related-post
+    sections across the site.
+============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT BELOW -->
+  <title>YOUR POST TITLE — GTS Insights</title>
+  <meta name="description" content="YOUR EXCERPT — keep under 155 characters for best search-result display.">
+  <link rel="canonical" href="https://gtsriskadvisory.com/insights/posts/YOUR-SLUG.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="YOUR POST TITLE">
+  <meta property="og:description" content="YOUR EXCERPT">
+  <meta property="og:image" content="https://gtsriskadvisory.com/og-image.svg">
+  <!-- END EDIT -->
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- IMPORTANT: When you copy this file, you must paste the standard
+       chrome (pre-header, header, mobile nav, footer) from any existing
+       post page. The fastest way is to copy /insights/posts/east-africa-elections-outlook-2026.html
+       and edit the body, rather than starting from this template. -->
+
+  <main id="main">
+    <article>
+
+      <section class="post-hero">
+        <div class="post-hero__media" aria-hidden="true">
+          <!-- EDIT: replace with your own cover image -->
+          <img src="https://picsum.photos/seed/YOUR-SLUG/1920/900" alt="" loading="eager">
+        </div>
+        <div class="container post-hero__inner reveal">
+          <div class="service-hero__crumbs">
+            <a href="/">Home</a> <span class="sep">/</span>
+            <a href="/insights/">Insights</a> <span class="sep">/</span>
+            <!-- EDIT: category -->
+            <span>YOUR CATEGORY</span>
+          </div>
+          <!-- EDIT: category eyebrow -->
+          <span class="eyebrow">YOUR CATEGORY</span>
+          <!-- EDIT: title -->
+          <h1 style="margin:var(--s-4) 0">YOUR POST TITLE GOES HERE</h1>
+          <div class="post-hero__meta">
+            <!-- EDIT: author, date, read time -->
+            <span class="cat">YOUR AUTHOR NAME</span>
+            <span>·</span>
+            <span>DD MONTH YYYY</span>
+            <span>·</span>
+            <span>X min</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="post-body drop-cap">
+        <div class="author">
+          <!-- EDIT: author initials and details -->
+          <div class="author__avatar">XX</div>
+          <div>
+            <div class="author__name">YOUR AUTHOR NAME</div>
+            <div class="author__role">YOUR ROLE</div>
+          </div>
+        </div>
+
+        <!-- ============================================================
+             BODY CONTENT STARTS HERE — REPLACE EVERYTHING BELOW THIS LINE
+             WITH YOUR OWN WRITING.
+             - <p> for paragraphs
+             - <h2> for major sections
+             - <h3> for subsections
+             - <blockquote> for pull quotes
+             - <ul><li>…</li></ul> for bullet lists
+             - <figure><img><figcaption>…</figcaption></figure> for captioned images
+             ============================================================ -->
+
+        <p>This is your opening paragraph. The first letter will become a gold drop-cap automatically. Keep this paragraph strong — it sets the tone for the rest of the piece.</p>
+
+        <p>Continue with your second paragraph. Keep paragraphs tight and substantive. The GTS voice is authoritative, calm, precise, and discreet. Avoid jargon where plain language works as well.</p>
+
+        <h2>A section heading</h2>
+
+        <p>Body paragraph inside your section.</p>
+
+        <blockquote>A pull-quote that's worth pulling out — usually one strong sentence per piece. Sparingly used.</blockquote>
+
+        <p>Continue the article.</p>
+
+        <h2>Another section</h2>
+
+        <ul>
+          <li>Bullet point one</li>
+          <li>Bullet point two</li>
+          <li>Bullet point three</li>
+        </ul>
+
+        <p>Closing paragraph. Land somewhere — a recommendation, a question worth carrying forward, a next step.</p>
+
+        <!-- ============================================================
+             END BODY CONTENT
+             ============================================================ -->
+
+        <div class="share" aria-label="Share this post">
+          <span style="font-family:var(--font-mono);font-size:var(--t-xs);letter-spacing:.12em;color:var(--color-ink-low)">SHARE:</span>
+          <a href="#" aria-label="Share to LinkedIn"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="8" y1="10" x2="8" y2="17"/><circle cx="8" cy="7" r="0.5"/><path d="M12 17v-4a2 2 0 1 1 4 0v4"/><line x1="12" y1="10" x2="12" y2="17"/></svg></a>
+          <a href="#" aria-label="Share to X"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l7 9-7 7h3l5.5-5.5L17 20h3l-7.5-9.5L19.5 4H17l-5 5L8 4H4Z"/></svg></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

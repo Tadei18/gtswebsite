@@ -1,0 +1,429 @@
+{
+  "consulting": [
+    {
+      "slug": "security-risk-assessments",
+      "name": "Security Risk Assessments & Audits",
+      "summary": "Structured, intelligence-driven evaluation of an organization's physical, operational, and procedural security posture.",
+      "meta_desc": "Security risk assessments and audits — gap analysis, threat mapping, and control effectiveness testing for corporates, government, financial institutions, and NGOs across Africa.",
+      "image_seed": "gts-assessments",
+      "lede": "A structured, intelligence-driven evaluation of your organization's physical, operational, and procedural security posture — translating vulnerabilities into prioritized, actionable improvements.",
+      "overview": [
+        "Our Security Risk Assessments & Audits service provides a structured and intelligence-driven evaluation of an organization's physical, operational, and procedural security posture. The service is designed to identify vulnerabilities, assess threat exposure, and evaluate the effectiveness of existing security controls across facilities, personnel, and systems. Through a combination of on-site inspections, documentation reviews, and risk modeling techniques, we generate a clear picture of organizational security resilience.",
+        "The assessment process includes gap analysis, threat mapping, and control effectiveness testing, enabling organizations to understand where weaknesses exist and how they can be addressed. Findings are translated into practical, prioritized recommendations that support compliance, operational continuity, and risk reduction.",
+        "This service is suitable for corporates, government entities, financial institutions, NGOs, and infrastructure operators seeking to strengthen their security frameworks. It supports both proactive risk management and regulatory compliance requirements. The outcome is a detailed audit report that enhances decision-making, improves preparedness, and strengthens overall security governance across the organization."
+      ],
+      "coverage": [
+        "On-site facility and asset inspections",
+        "Security control documentation review",
+        "Threat mapping and risk modelling",
+        "Gap analysis against best-practice frameworks",
+        "Control effectiveness testing",
+        "Prioritized findings and remediation roadmap",
+        "Executive-grade audit reporting"
+      ],
+      "why_gts": [
+        {"title": "Intelligence-led, not checklist-led", "body": "We weigh controls against real threats in your environment, not a generic compliance template."},
+        {"title": "Findings you can act on", "body": "Every gap has an owner, a cost, and a timeline. No abstract recommendations."},
+        {"title": "Independent and unconflicted", "body": "We don't sell the technology — so the assessment isn't a sales pitch in disguise."}
+      ],
+      "engagement": [
+        {"title": "Scoping & data gathering", "body": "Confidential kick-off, document review, and definition of assessment scope and depth."},
+        {"title": "On-site assessment", "body": "Walk-downs, control tests, interviews, and threat modelling — over hours, not days, where possible."},
+        {"title": "Report & roadmap", "body": "Findings, prioritization, costing, and presentation to leadership with optional implementation support."}
+      ],
+      "related": [
+        {"name": "Business Process Control Audits", "kind": "Consulting", "href": "/consulting/business-process-audits/", "body": "Internal process and control evaluation across departments."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated security frameworks and ongoing protection."},
+        {"name": "Policy & SOPs Design", "kind": "Consulting", "href": "/consulting/policy-sops/", "body": "Governance documentation and standard operating procedures."}
+      ]
+    },
+
+    {
+      "slug": "business-process-audits",
+      "name": "Business Process Control Audits",
+      "summary": "Evaluation of internal processes to ensure efficiency, accountability, and strong governance — identifying control weaknesses and fraud exposure.",
+      "meta_desc": "Business process control audits — workflow review, segregation-of-duties testing, and operational efficiency analysis for institutions seeking improved governance.",
+      "image_seed": "gts-process-audits",
+      "lede": "Independent evaluation of your internal processes — identifying control weaknesses, operational inefficiencies, and exposure to fraud, compliance breaches, or procedural failures.",
+      "overview": [
+        "The Business Process Control Audit service evaluates internal organizational processes to ensure efficiency, accountability, and strong governance frameworks. It focuses on identifying control weaknesses, operational inefficiencies, and exposure to fraud, compliance breaches, or procedural failures. By examining workflows, authorization structures, and reporting mechanisms, the service provides a comprehensive view of how well internal controls are functioning.",
+        "The audit methodology combines process mapping, risk assessment, and control testing to detect gaps that may affect operational integrity. Special attention is given to segregation of duties, authorization protocols, and compliance with internal policies and external regulations.",
+        "Organizations benefit from clear insights into process vulnerabilities and actionable recommendations for strengthening control environments. The service enhances transparency, reduces operational risks, and improves organizational discipline.",
+        "It is particularly valuable for institutions seeking to improve governance, strengthen accountability frameworks, and optimize operational performance across departments."
+      ],
+      "coverage": [
+        "End-to-end process mapping",
+        "Segregation-of-duties analysis",
+        "Authorization and approval testing",
+        "Compliance with internal policies and external regulations",
+        "Reporting and reconciliation review",
+        "Fraud-risk assessment by process",
+        "Recommendations for process redesign and control uplift"
+      ],
+      "why_gts": [
+        {"title": "Process AND people", "body": "Controls fail at human seams. We test how procedures actually run, not how they're documented."},
+        {"title": "Fraud-aware lens", "body": "Auditors think about where the loss could hide, not just whether the box was ticked."},
+        {"title": "Constructive, not punitive", "body": "Recommendations help management improve — not just shame teams in front of the board."}
+      ],
+      "engagement": [
+        {"title": "Process selection & planning", "body": "Risk-based selection of processes to audit and design of audit testing approach."},
+        {"title": "Fieldwork & testing", "body": "Walkthroughs, control tests, sample testing, and management interviews."},
+        {"title": "Report & remediation", "body": "Findings memo with prioritized recommendations and optional remediation support."}
+      ],
+      "related": [
+        {"name": "Security Risk Assessments", "kind": "Consulting", "href": "/consulting/security-risk-assessments/", "body": "Intelligence-driven security posture evaluation."},
+        {"name": "Corporate Forensic Investigations", "kind": "Service", "href": "/services/forensic-investigations/", "body": "Evidence-based investigation of suspected losses or misconduct."},
+        {"name": "Policy & SOPs Design", "kind": "Consulting", "href": "/consulting/policy-sops/", "body": "Structured policy and procedure design."}
+      ]
+    },
+
+    {
+      "slug": "travel-security",
+      "name": "Travel Security Risk Programs",
+      "summary": "Structured travel risk assessments, journey planning, and real-time mitigation to protect personnel operating in domestic and international environments.",
+      "meta_desc": "Travel security programs — destination risk profiling, route analysis, accommodation vetting, emergency response, and journey management for executives and field teams.",
+      "image_seed": "gts-travel",
+      "lede": "Structured travel risk assessments, journey planning, and real-time mitigation strategies — protecting personnel operating in domestic and international environments, including high-risk and unpredictable regions.",
+      "overview": [
+        "The Travel Security Risk Program is designed to protect personnel operating in domestic and international environments, particularly in high-risk or unpredictable regions. This service provides structured travel risk assessments, journey planning, and real-time risk mitigation strategies to ensure personnel safety and operational continuity.",
+        "Key components include destination risk profiling, route analysis, accommodation vetting, and emergency response planning. The program also integrates threat monitoring and advisory systems to provide continuous updates on evolving security conditions. In addition, contingency planning and evacuation protocols are developed to support rapid response in case of emergencies. Organizations benefit from reduced exposure to travel-related risks and improved confidence in staff mobility.",
+        "This service is particularly relevant for corporate executives, NGOs, development agencies, and field-based personnel operating in complex environments. The result is a proactive travel security framework that ensures safety, preparedness, and informed decision-making throughout all stages of travel."
+      ],
+      "coverage": [
+        "Destination and country-level risk profiling",
+        "Route analysis and ground-transport security",
+        "Accommodation vetting and meet-and-greet",
+        "Pre-travel briefings and travel kits",
+        "Real-time monitoring and advisory alerts",
+        "Crisis response and medical assistance protocols",
+        "Evacuation planning and execution"
+      ],
+      "why_gts": [
+        {"title": "Africa-native intelligence", "body": "Our travel advisories are written by analysts who live in and have worked across the continent."},
+        {"title": "Tracked, not just briefed", "body": "Real-time monitoring keeps travellers in the picture — and us in their picture — during movement."},
+        {"title": "Ready for the bad day", "body": "Evacuation protocols are pre-built and rehearsed, not invented during the incident."}
+      ],
+      "engagement": [
+        {"title": "Programme design", "body": "Define travel risk policy, traveller tiers, and 24/7 response framework."},
+        {"title": "Journey management", "body": "Pre-trip risk profile, in-trip monitoring, and post-trip review for each movement."},
+        {"title": "Incident response", "body": "On-call team, evacuation planning, and crisis support when conditions deteriorate."}
+      ],
+      "related": [
+        {"name": "Safety Evacuation Programs", "kind": "Consulting", "href": "/consulting/safety-evacuation/", "body": "Planned, rehearsed evacuation for personnel and assets."},
+        {"name": "Executive Protection Services", "kind": "Service", "href": "/services/executive-protection/", "body": "Discreet protection for principals during travel and operations."},
+        {"name": "Capacity Building Services", "kind": "Consulting", "href": "/consulting/capacity-building/", "body": "Traveller awareness and security training programmes."}
+      ]
+    },
+
+    {
+      "slug": "safety-evacuation",
+      "name": "Safety Evacuation Programs",
+      "summary": "Coordinated evacuation planning for emergencies — preparedness, response, and recovery strategies to safeguard lives, assets, and continuity.",
+      "meta_desc": "Safety evacuation programs — facility evacuation planning, scenario-based drills, crisis communications, and emergency response coordination for diverse environments.",
+      "image_seed": "gts-evac",
+      "lede": "Coordinated, well-rehearsed evacuation for emergencies — preparedness planning, response coordination, and recovery strategies that safeguard lives, assets, and operational continuity.",
+      "overview": [
+        "Safety Evacuation Programs are designed to ensure the safe, coordinated, and efficient evacuation of personnel during emergencies such as natural disasters, security incidents, or operational disruptions. The service focuses on preparedness planning, response coordination, and recovery strategies to safeguard lives and assets.",
+        "We develop tailored evacuation plans based on facility layouts, risk profiles, and operational requirements. These include clearly defined evacuation routes, assembly points, communication protocols, and emergency roles and responsibilities. Scenario-based simulations and drills are conducted to test readiness and identify improvement areas.",
+        "The program also incorporates crisis communication planning to ensure timely dissemination of instructions during emergencies. Organizations benefit from improved response capability, reduced confusion during incidents, and enhanced compliance with safety regulations.",
+        "This service is essential for corporate facilities, educational institutions, industrial sites, and public infrastructure operators seeking to strengthen emergency preparedness and resilience."
+      ],
+      "coverage": [
+        "Facility-specific evacuation planning",
+        "Route, assembly point, and refuge design",
+        "Roles, responsibilities, and chain-of-command",
+        "Communication protocols and mass-notification",
+        "Scenario-based drills and tabletop exercises",
+        "Crisis communication planning",
+        "Post-incident recovery procedures"
+      ],
+      "why_gts": [
+        {"title": "Plans that rehearse", "body": "An evacuation plan is only as good as the last drill. We design the rhythm of practice, too."},
+        {"title": "Scenario-realistic", "body": "Drills test the failures that actually happen — power loss, blocked exits, panicked crowds."},
+        {"title": "Comms-first design", "body": "Most evacuations fail on communication. We engineer that layer before the routes."}
+      ],
+      "engagement": [
+        {"title": "Site & scenario analysis", "body": "Walk the facility, identify the realistic threat scenarios, and map the people-flow."},
+        {"title": "Plan & communicate", "body": "Build the plan, train the marshals, and embed the communications protocol."},
+        {"title": "Drill & refine", "body": "Run live exercises and tabletops; iterate the plan based on observed performance."}
+      ],
+      "related": [
+        {"name": "Travel Security Programs", "kind": "Consulting", "href": "/consulting/travel-security/", "body": "Pre-emptive travel risk and journey management for personnel."},
+        {"name": "Fraud & Security Awareness Training", "kind": "Service", "href": "/services/fraud-security-training/", "body": "Behavioural and operational security training programmes."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated security framework covering crisis preparedness."}
+      ]
+    },
+
+    {
+      "slug": "market-entry",
+      "name": "Market Entry Assessments",
+      "summary": "Comprehensive risk intelligence and feasibility analysis for organizations expanding into new geographic or sectoral markets across Africa.",
+      "meta_desc": "Market entry assessments — political, regulatory, security, economic, and operational risk analysis for new geographic or sectoral expansion across Africa.",
+      "image_seed": "gts-market",
+      "lede": "Comprehensive risk intelligence and feasibility analysis for organizations planning expansion into new geographic or sectoral markets — political, regulatory, security, economic, and operational risk on one page.",
+      "overview": [
+        "Market Entry Assessments provide comprehensive risk intelligence and feasibility analysis for organizations planning expansion into new geographic or sectoral markets. The service evaluates political, regulatory, security, economic, and operational risks that may influence business success.",
+        "Our approach includes country risk profiling, stakeholder environment analysis, and competitive landscape assessment. We also examine legal frameworks, investment conditions, and potential security challenges that may affect operations.",
+        "The final report delivers clear insights into market viability, risk exposure, and strategic entry options. It enables organizations to make informed decisions regarding expansion strategies, resource allocation, and risk mitigation planning.",
+        "This service is particularly valuable for investors, multinational corporations, NGOs, and development agencies seeking to enter new or emerging markets with confidence and clarity. The outcome is a structured decision-support tool that enhances strategic planning and reduces uncertainty in new market environments."
+      ],
+      "coverage": [
+        "Country and political risk profiling",
+        "Regulatory and legal framework analysis",
+        "Stakeholder and counter-party mapping",
+        "Security and operational risk overlay",
+        "Competitive landscape and market structure",
+        "Entry-mode and partnership options analysis",
+        "Decision-support reporting for leadership"
+      ],
+      "why_gts": [
+        {"title": "Risk and opportunity in one frame", "body": "We don't just flag the risks — we model them against the upside so decisions can be balanced."},
+        {"title": "Local intelligence", "body": "Field-verified insight from in-country sources, not just desk research."},
+        {"title": "Board-ready outputs", "body": "Findings are written for the people deciding — concise, defensible, decision-shaped."}
+      ],
+      "engagement": [
+        {"title": "Scoping & questions", "body": "Define the decisions the assessment must inform — market, mode, timing, partners."},
+        {"title": "Research & verification", "body": "Open-source analysis, field interviews, and stakeholder mapping, triangulated."},
+        {"title": "Report & briefing", "body": "Structured decision-support report, plus an in-person briefing to leadership."}
+      ],
+      "related": [
+        {"name": "Merger & Acquisition Risk Assessments", "kind": "Consulting", "href": "/consulting/mergers-acquisitions/", "body": "Transaction-stage risk diligence for acquisitions and partnerships."},
+        {"name": "Vetting & Due Diligence", "kind": "Consulting", "href": "/consulting/vetting-due-diligence/", "body": "Background screening for partners, vendors, and counter-parties."},
+        {"name": "Embedded Consultancy", "kind": "Consulting", "href": "/consulting/embedded-consultancy/", "body": "On-site advisory support during market entry execution."}
+      ]
+    },
+
+    {
+      "slug": "mergers-acquisitions",
+      "name": "Merger & Acquisition Risk Assessments",
+      "summary": "Comprehensive risk diligence for transactions — identifying operational, financial, reputational, and security-related risks before they reshape the deal.",
+      "meta_desc": "M&A risk assessments — due diligence, background checks, asset verification, compliance screening, and integration-risk analysis for transactions and partnerships.",
+      "image_seed": "gts-mna",
+      "lede": "Comprehensive risk diligence for transactions — identifying the operational, financial, reputational, and security risks that move deal value, before they show up in the integration plan.",
+      "overview": [
+        "Merger & Acquisition Risk Assessments provide a comprehensive evaluation of risks associated with corporate mergers, acquisitions, and strategic partnerships. The service focuses on identifying operational, financial, reputational, and security-related risks that may impact transaction success.",
+        "We conduct detailed due diligence reviews, including background assessments, asset verification, compliance checks, and vulnerability analysis. Special attention is given to hidden liabilities, cultural integration risks, and potential exposure to fraud or misconduct.",
+        "The assessment supports decision-makers by providing clear, evidence-based insights into risk levels and mitigation strategies. It enhances negotiation strength, improves transparency, and supports smoother integration processes post-transaction.",
+        "Organizations benefit from reduced uncertainty and improved confidence in investment decisions. This service is essential for investors, private equity firms, and corporations engaged in strategic expansion or consolidation activities."
+      ],
+      "coverage": [
+        "Counter-party background and reputation assessment",
+        "Asset verification and operational diligence",
+        "Compliance and sanctions screening",
+        "Hidden liabilities and contingent exposures",
+        "Fraud and misconduct risk review",
+        "Cultural and integration risk profiling",
+        "Post-transaction risk mitigation planning"
+      ],
+      "why_gts": [
+        {"title": "Beyond the legal pack", "body": "We look where lawyers don't — operations, culture, conduct, and reputation."},
+        {"title": "Africa-context diligence", "body": "Verification techniques calibrated to local registries, regulators, and the way business actually runs."},
+        {"title": "Integration-aware", "body": "Findings are framed for the people who'll have to integrate, not just close, the deal."}
+      ],
+      "engagement": [
+        {"title": "Pre-deal scoping", "body": "Confidential brief on transaction, counter-party, and key concerns. Build the diligence plan."},
+        {"title": "Diligence execution", "body": "Open-source and discreet field investigation, document review, and verification activities."},
+        {"title": "Findings & deal support", "body": "Risk-stratified report and optional support through negotiation and integration."}
+      ],
+      "related": [
+        {"name": "Market Entry Assessments", "kind": "Consulting", "href": "/consulting/market-entry/", "body": "Country and sector feasibility analysis for new market entry."},
+        {"name": "Vetting & Due Diligence", "kind": "Consulting", "href": "/consulting/vetting-due-diligence/", "body": "Background checks on individuals and entities."},
+        {"name": "Tailored Investigations", "kind": "Consulting", "href": "/consulting/tailored-investigations/", "body": "Discreet evidence-based investigation services."}
+      ]
+    },
+
+    {
+      "slug": "embedded-consultancy",
+      "name": "Embedded Consultancy Services",
+      "summary": "Dedicated, on-site or integrated expert support inside your organization — continuous risk oversight, real-time advisory, and operational involvement.",
+      "meta_desc": "Embedded consultancy — on-site or integrated GTS experts supporting risk management, security framework development, and operational decision-making.",
+      "image_seed": "gts-embedded",
+      "lede": "Dedicated, on-site or integrated expert support inside your organization — providing continuous risk oversight, real-time advisory input, and direct involvement in operational decision-making.",
+      "overview": [
+        "Embedded Consultancy Services provide dedicated, on-site or integrated expert support within client organizations. This model ensures continuous risk oversight, real-time advisory input, and direct involvement in operational decision-making processes.",
+        "Our consultants work closely with internal teams to strengthen security frameworks, improve risk management practices, and enhance operational resilience. The service includes ongoing risk monitoring, policy implementation support, and incident response advisory. Embedded consultants also assist in capacity building, process optimization, and compliance alignment, ensuring that organizations maintain high standards of security and governance.",
+        "This approach is particularly effective for organizations operating in high-risk environments or undergoing transformation. The result is sustained improvement in security posture, enhanced decision-making capability, and stronger internal risk management culture."
+      ],
+      "coverage": [
+        "Embedded security or risk advisor (full or part-time)",
+        "Real-time advisory on emerging incidents",
+        "Policy and SOP implementation support",
+        "Internal capability development",
+        "Liaison with external authorities and partners",
+        "Risk-monitoring dashboard and reporting cadence",
+        "Knowledge transfer to internal teams"
+      ],
+      "why_gts": [
+        {"title": "Inside the room", "body": "Decisions get better when advice is in the room rather than on a slide deck two weeks later."},
+        {"title": "Transfer-led", "body": "Engagement design aims to build internal capability, not perpetual dependence."},
+        {"title": "Senior-level seniority", "body": "Embedded consultants carry advisory weight that holds up with C-suite and board."}
+      ],
+      "engagement": [
+        {"title": "Role definition", "body": "Agree scope, decision rights, reporting lines, and success metrics for the embedded role."},
+        {"title": "Operate in place", "body": "Consultant integrates with leadership and operating teams on agreed cadence."},
+        {"title": "Transition planning", "body": "Knowledge transfer and capability-build plan for eventual handover to internal staff."}
+      ],
+      "related": [
+        {"name": "Capacity Building Services", "kind": "Consulting", "href": "/consulting/capacity-building/", "body": "Structured training and knowledge transfer programmes."},
+        {"name": "Policy & SOPs Design", "kind": "Consulting", "href": "/consulting/policy-sops/", "body": "Governance and standard operating procedure development."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated organizational security frameworks."}
+      ]
+    },
+
+    {
+      "slug": "tailored-investigations",
+      "name": "Tailored Investigations Services",
+      "summary": "Discreet, structured, evidence-based investigations into fraud, misconduct, security breaches, and operational irregularities — customized to each case.",
+      "meta_desc": "Tailored investigations services — discreet, evidence-based inquiries into fraud, misconduct, security breaches, and operational irregularities for corporates and institutions.",
+      "image_seed": "gts-investigations",
+      "lede": "Discreet, structured, evidence-based investigations — customized to case complexity, conducted with strict confidentiality, and delivered with clear conclusions and actionable recommendations.",
+      "overview": [
+        "Tailored Investigations Services provide discreet, structured, and evidence-based investigations into incidents such as fraud, misconduct, security breaches, and operational irregularities. Each investigation is customized based on client needs and case complexity.",
+        "The process involves evidence collection, interviews, forensic analysis, and documentation review to establish facts and identify root causes. Findings are compiled into detailed reports with clear conclusions and actionable recommendations.",
+        "These services support organizations in resolving internal disputes, enforcing accountability, and preventing future incidents. Confidentiality and professionalism are maintained throughout all investigative processes.",
+        "The service is suitable for corporates, NGOs, financial institutions, and public sector organizations seeking objective and reliable investigative support to strengthen integrity and operational trust."
+      ],
+      "coverage": [
+        "Fraud and financial misconduct investigations",
+        "Asset tracing and recovery support",
+        "Workplace misconduct and dispute investigations",
+        "Security breach and incident analysis",
+        "Operational and procedural irregularity reviews",
+        "Forensic document and digital evidence review",
+        "Witness and subject interview management"
+      ],
+      "why_gts": [
+        {"title": "Confidential by design", "body": "Engagements run on a strict need-to-know basis with disciplined chain-of-custody."},
+        {"title": "Defensible methodology", "body": "Procedures, evidence, and reports built to withstand legal and disciplinary scrutiny."},
+        {"title": "Outcomes, not just findings", "body": "Reports close with prevention recommendations, not just a chronology of what happened."}
+      ],
+      "engagement": [
+        {"title": "Confidential brief & plan", "body": "Sponsor interview, sensitivity controls, and investigation plan with clear scope."},
+        {"title": "Evidence & inquiry", "body": "Structured fact-finding — documents, data, interviews — under chain-of-custody."},
+        {"title": "Report & prevention", "body": "Findings, conclusions, and prevention recommendations for management action."}
+      ],
+      "related": [
+        {"name": "Corporate Forensic Investigations", "kind": "Service", "href": "/services/forensic-investigations/", "body": "Forensic-grade corporate investigation services."},
+        {"name": "Vetting & Due Diligence", "kind": "Consulting", "href": "/consulting/vetting-due-diligence/", "body": "Background screening on individuals and entities."},
+        {"name": "Business Process Control Audits", "kind": "Consulting", "href": "/consulting/business-process-audits/", "body": "Internal control evaluation across departments."}
+      ]
+    },
+
+    {
+      "slug": "capacity-building",
+      "name": "Capacity Building Services",
+      "summary": "Strengthening organizational capability through structured training, skills development, and knowledge transfer — built for long-term resilience.",
+      "meta_desc": "Capacity building services — structured training, skills development, and knowledge transfer programmes in security, risk management, and operational resilience.",
+      "image_seed": "gts-capacity",
+      "lede": "Strengthening organizational capability through structured training, skills development, and knowledge transfer — designed to enhance workforce competence in security, risk management, and operational resilience.",
+      "overview": [
+        "Capacity Building Services focus on strengthening organizational capability through structured training, skills development, and knowledge transfer programs. The service is designed to enhance workforce competence in security, risk management, and operational resilience.",
+        "Training programs cover areas such as threat awareness, crisis response, fraud prevention, and security best practices. Sessions are delivered through workshops, simulations, and practical exercises tailored to organizational needs.",
+        "The service also supports leadership development and institutional strengthening by equipping teams with the tools and knowledge required for effective risk management.",
+        "Organizations benefit from improved staff readiness, enhanced security awareness, and stronger internal response capability. This service is essential for organizations seeking long-term resilience and sustainable performance improvement."
+      ],
+      "coverage": [
+        "Threat awareness and risk literacy programmes",
+        "Crisis response and incident management training",
+        "Fraud prevention and detection skills",
+        "Security best practice workshops",
+        "Leadership development for risk owners",
+        "Train-the-trainer and institutionalization support",
+        "Capability assessment and benchmarking"
+      ],
+      "why_gts": [
+        {"title": "Capability, not attendance", "body": "Programmes are measured by capability shift — not number of certificates issued."},
+        {"title": "Built for the role", "body": "Curriculum maps to specific operational roles, not generic categories."},
+        {"title": "Designed to embed", "body": "Train-the-trainer modules ensure the capability lives on after we leave."}
+      ],
+      "engagement": [
+        {"title": "Capability assessment", "body": "Map current competence against role-based capability requirements and operational risks."},
+        {"title": "Programme design & delivery", "body": "Workshops, simulations, and field exercises sequenced across the calendar."},
+        {"title": "Sustain & re-test", "body": "Periodic re-assessment, refresher cycles, and trainer development for internal staff."}
+      ],
+      "related": [
+        {"name": "Fraud & Security Awareness Training", "kind": "Service", "href": "/services/fraud-security-training/", "body": "Structured security awareness training for corporate teams."},
+        {"name": "Embedded Consultancy Services", "kind": "Consulting", "href": "/consulting/embedded-consultancy/", "body": "On-site advisory support for sustained capability development."},
+        {"name": "Policy & SOPs Design", "kind": "Consulting", "href": "/consulting/policy-sops/", "body": "Governance documentation and operating procedures."}
+      ]
+    },
+
+    {
+      "slug": "policy-sops",
+      "name": "Policy & SOPs Designing & Formulation",
+      "summary": "Structured development of organizational policies and Standard Operating Procedures that guide operations, ensure compliance, and strengthen governance.",
+      "meta_desc": "Policy and SOPs design — structured development of organizational policies and standard operating procedures for security, risk, and operational governance.",
+      "image_seed": "gts-policy",
+      "lede": "Structured development of organizational policies and Standard Operating Procedures — clear, practical, enforceable frameworks aligned with industry standards and regulatory requirements.",
+      "overview": [
+        "Policy & SOPs Designing & Formulation service provides structured development of organizational policies and Standard Operating Procedures that guide operations, ensure compliance, and strengthen governance.",
+        "We design clear, practical, and enforceable frameworks aligned with industry standards and regulatory requirements. The process includes stakeholder consultation, risk analysis, workflow mapping, and documentation development.",
+        "Policies and SOPs are tailored to enhance consistency, reduce ambiguity, and improve operational discipline across departments. They also support audit readiness and compliance with internal and external standards.",
+        "Organizations benefit from improved operational efficiency, reduced risk exposure, and strengthened accountability structures. This service is essential for institutions seeking structured governance and standardized operational execution."
+      ],
+      "coverage": [
+        "Stakeholder consultation and requirements gathering",
+        "Risk-based policy framework design",
+        "Standard Operating Procedure development",
+        "Workflow and process mapping",
+        "Alignment with regulatory and industry standards",
+        "Audit-ready documentation and version control",
+        "Implementation and adoption support"
+      ],
+      "why_gts": [
+        {"title": "Plain-English by default", "body": "Policies that operators actually read because they were written to be read."},
+        {"title": "Enforceable, not aspirational", "body": "Procedures designed around what teams will actually do, not what governance would prefer."},
+        {"title": "Versioned and audit-ready", "body": "Documentation engineered for traceability, control, and external scrutiny."}
+      ],
+      "engagement": [
+        {"title": "Scope & current-state", "body": "Map existing documents, gaps, and regulatory drivers. Define target framework."},
+        {"title": "Author & validate", "body": "Draft policies and SOPs with subject-matter expert input and stakeholder validation."},
+        {"title": "Adopt & maintain", "body": "Training, rollout support, and a review cadence to keep the documents alive."}
+      ],
+      "related": [
+        {"name": "Business Process Control Audits", "kind": "Consulting", "href": "/consulting/business-process-audits/", "body": "Internal control evaluation across processes."},
+        {"name": "Security Risk Assessments", "kind": "Consulting", "href": "/consulting/security-risk-assessments/", "body": "Intelligence-driven security posture evaluation."},
+        {"name": "Capacity Building Services", "kind": "Consulting", "href": "/consulting/capacity-building/", "body": "Training and knowledge transfer to embed new procedures."}
+      ]
+    },
+
+    {
+      "slug": "vetting-due-diligence",
+      "name": "Vetting & Due Diligence Services",
+      "summary": "Comprehensive background checks and risk assessments on individuals, partners, vendors, and organizations — verifying credibility, surfacing risks.",
+      "meta_desc": "Vetting and due diligence services — background checks, financial and reputational screening for individuals, partners, vendors, and organizations.",
+      "image_seed": "gts-vetting",
+      "lede": "Comprehensive background checks and risk assessments on individuals, partners, vendors, and organizations — verifying credibility, surfacing risk, and supporting informed decision-making.",
+      "overview": [
+        "Vetting & Due Diligence Services provide comprehensive background checks and risk assessments on individuals, partners, vendors, and organizations. The service is designed to verify credibility, identify risks, and support informed decision-making.",
+        "Our process includes identity verification, financial background checks, reputational analysis, and compliance screening. We also assess potential risks related to fraud, corruption, legal exposure, and operational integrity.",
+        "Findings are presented in structured reports that support hiring decisions, partnership evaluations, and procurement processes. The service enhances organizational security by reducing exposure to unreliable or high-risk entities.",
+        "This service is widely used by corporates, financial institutions, NGOs, and government agencies seeking to maintain integrity and safeguard operational interests."
+      ],
+      "coverage": [
+        "Identity verification and document checks",
+        "Financial and credit background analysis",
+        "Reputational and adverse-media screening",
+        "Sanctions, PEP, and watchlist screening",
+        "Litigation and regulatory history review",
+        "Asset and shareholding verification",
+        "Structured risk-rated reporting"
+      ],
+      "why_gts": [
+        {"title": "Local registry fluency", "body": "Working knowledge of African corporate registries, court systems, and verification channels."},
+        {"title": "Risk-rated outputs", "body": "Reports are scored and color-coded so decisions can be made at a glance — with detail behind."},
+        {"title": "Compliance-grade rigor", "body": "Procedures meet financial-services and NGO compliance requirements out of the box."}
+      ],
+      "engagement": [
+        {"title": "Scope definition", "body": "Define the subject(s), scope, depth, and decision the report must support."},
+        {"title": "Investigation & verification", "body": "Open-source, registry, and discreet field verification with chain-of-custody."},
+        {"title": "Reporting & risk rating", "body": "Structured report with risk rating, supporting evidence, and decision-ready summary."}
+      ],
+      "related": [
+        {"name": "Merger & Acquisition Risk Assessments", "kind": "Consulting", "href": "/consulting/mergers-acquisitions/", "body": "Transaction-stage risk diligence."},
+        {"name": "Tailored Investigations", "kind": "Consulting", "href": "/consulting/tailored-investigations/", "body": "Discreet, evidence-based investigations."},
+        {"name": "Corporate Forensic Investigations", "kind": "Service", "href": "/services/forensic-investigations/", "body": "Forensic-grade investigation of internal concerns."}
+      ]
+    }
+  ]
+}

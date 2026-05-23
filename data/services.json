@@ -1,0 +1,462 @@
+{
+  "services": [
+    {
+      "slug": "corporate-security",
+      "name": "Corporate Security Services",
+      "summary": "Tailored security strategies and integrated protection frameworks that safeguard people, property, information, and reputation.",
+      "meta_desc": "Corporate security services for organizations operating in complex environments — assessments, framework design, and integrated protection across Kenya, East Africa, and the continent.",
+      "image_seed": "gts-corporate",
+      "lede": "Organizations today face an increasingly complex threat landscape. Our Corporate Security Services are designed to help you safeguard what matters most while ensuring business continuity and operational resilience.",
+      "overview": [
+        "Organizations today face an increasingly complex threat landscape, resulting in operational and supply chain disruptions, as well as risks to life, property, information, and reputation. Our Corporate Security Services are designed to help organizations safeguard what matters most while ensuring business continuity and operational resilience.",
+        "We work closely with clients to develop structured security strategies aligned with their operational objectives and risk profiles. Our approach begins with comprehensive security assessments to identify vulnerabilities and evaluate the effectiveness of existing controls. Based on these findings, we design tailored security frameworks that strengthen risk management capabilities and enhance overall organizational resilience.",
+        "We deliver integrated security solutions that support early risk detection, effective response to emerging threats, and sustained secure operations."
+      ],
+      "coverage": [
+        "Security policy and framework development",
+        "Physical Security & Asset Protection",
+        "Emergency preparedness and simulation exercises",
+        "Post-incident investigations and corrective actions",
+        "Supply Chain & Third-Party Security",
+        "Event & Operational Security Support",
+        "Security Audits & Continuous Improvement"
+      ],
+      "why_gts": [
+        {"title": "Strategy before tactics", "body": "We design the security framework first, then deploy the controls — never the other way around."},
+        {"title": "Calibrated to context", "body": "Each programme is tuned to your sector, footprint, and risk appetite. No copy-paste templates."},
+        {"title": "Continuity-first thinking", "body": "Resilience is the measure. We optimize for sustained operations under stress, not perfect defence."}
+      ],
+      "engagement": [
+        {"title": "Diagnostic assessment", "body": "Site visits, control reviews, and threat modelling to build a defensible picture of current posture."},
+        {"title": "Framework design", "body": "Prioritized recommendations, phased to budget cycles and tied to measurable outcomes."},
+        {"title": "Implementation & sustainment", "body": "Programme rollout with training, drills, and quarterly reviews to keep controls effective."}
+      ],
+      "related": [
+        {"name": "Risk Management Solutions", "kind": "Service", "href": "/services/risk-management/", "body": "Enterprise-wide identification, assessment, and mitigation of operational and strategic risks."},
+        {"name": "Security Risk Assessments", "kind": "Consulting", "href": "/consulting/security-risk-assessments/", "body": "Intelligence-driven evaluation of physical, operational, and procedural security posture."},
+        {"name": "Command Centre Operations", "kind": "Service", "href": "/services/command-centre/", "body": "24/7 oversight, coordinated incident response, and continuous situational awareness."}
+      ]
+    },
+
+    {
+      "slug": "risk-management",
+      "name": "Risk Management Solutions",
+      "summary": "Identify, assess, and mitigate risks that impact operations, reputation, or financial stability — through structured, proactive enterprise risk programs.",
+      "meta_desc": "Enterprise risk management solutions — assessments, crisis preparedness, business continuity, and intelligence-led mitigation across Kenya, East Africa, and the continent.",
+      "image_seed": "gts-risk",
+      "lede": "We identify, assess, and mitigate the risks most likely to impact your operations, reputation, or financial stability — through a structured, proactive approach that turns intelligence into action.",
+      "overview": [
+        "We identify, assess, and mitigate risks that are likely to impact organizational operations, reputation, or financial stability. Through a proactive and structured approach, the solution delivers detailed enterprise risk assessments, threat analysis, and scenario-based evaluations that highlight vulnerabilities across physical, operational, and organizational domains. It also incorporates crisis preparedness planning to ensure organizations are equipped to respond effectively to disruptions and emerging threats.",
+        "A key component of the service is the development of practical mitigation strategies that enhance resilience and business continuity. These strategies are supported by continuous monitoring and intelligence insights that enable timely identification of evolving risks.",
+        "By integrating risk analytics with actionable recommendations, organizations are empowered to strengthen governance, safeguard assets, and maintain operational stability in uncertain environments."
+      ],
+      "coverage": [
+        "Enterprise Risk Assessment",
+        "Crisis & Incident Management",
+        "Risk Assessment & Prioritization",
+        "Operational Risk Management",
+        "Strategic Risk Analysis",
+        "Compliance & Regulatory Risk",
+        "Business Continuity & Disaster Recovery"
+      ],
+      "why_gts": [
+        {"title": "Risk in operational language", "body": "We translate enterprise risk into the decisions your leaders actually make week to week."},
+        {"title": "Intelligence-coupled", "body": "Every mitigation plan is informed by current country and sector intelligence — not generic frameworks."},
+        {"title": "Practical mitigation", "body": "Our recommendations are costed, sequenced, and owned. No shelf-ware reports."}
+      ],
+      "engagement": [
+        {"title": "Enterprise risk diagnostic", "body": "Workshops with leadership and operators to surface exposures across the value chain."},
+        {"title": "Scenario modelling", "body": "Quantitative and narrative scenarios to test the resilience of current controls."},
+        {"title": "Mitigation roadmap", "body": "A prioritized, time-bound plan with continuity protocols and review cadence."}
+      ],
+      "related": [
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Tailored security strategies and integrated protection frameworks for organizations."},
+        {"name": "Business Process Control Audits", "kind": "Consulting", "href": "/consulting/business-process-audits/", "body": "Internal process evaluation for efficiency, accountability, and governance."},
+        {"name": "Policy & SOPs Design", "kind": "Consulting", "href": "/consulting/policy-sops/", "body": "Structured policy and standard operating procedure development."}
+      ]
+    },
+
+    {
+      "slug": "fraud-security-training",
+      "name": "Fraud & Security Awareness Training",
+      "summary": "Structured training programs that build stronger, more secure, and more resilient organizations aligned with international security standards.",
+      "meta_desc": "Fraud and security awareness training programs for corporate teams and security personnel — blended learning, simulations, and tailored curricula across Africa.",
+      "image_seed": "gts-training",
+      "lede": "Our training programs build stronger, more secure, and more resilient operating environments — through structured learning pathways, simulations, and practical workshops tailored to your risk profile.",
+      "overview": [
+        "Our training programs enable organizations to build stronger, more secure, and more resilient operating environments aligned with internationally recognized security standards. Through structured learning pathways, simulations, and practical workshops, we enhance the capabilities of both security personnel and broader corporate teams.",
+        "Delivered through a blended learning approach that combines classroom instruction, interactive workshops, scenario-based simulations, and hands-on exercises, the program ensures participants develop both conceptual understanding and operational readiness. Each program is tailored to the specific risk profile, operational context, and strategic priorities of the client.",
+        "The training integrates best practices in risk-informed decision-making, enabling employees and security teams to respond effectively under pressure. It strengthens organizational safety culture while reducing exposure to operational disruptions and security-related losses."
+      ],
+      "coverage": [
+        "Cybersecurity and the evolving threat landscape",
+        "Information security and data protection",
+        "Fraud risk management and detection",
+        "Financial and operational fraud risks",
+        "Compliance and regulatory frameworks",
+        "Ethics and corporate governance",
+        "Internal controls and process governance",
+        "Third-party and supply chain security",
+        "Incident response and crisis management",
+        "Emergency evacuation procedures",
+        "Emerging and evolving risk areas",
+        "Behavioural security awareness and culture development"
+      ],
+      "why_gts": [
+        {"title": "Curriculum, not slideware", "body": "Modular curricula built around your risk register, not generic awareness decks."},
+        {"title": "Scenario-led", "body": "Tabletop and live simulations drawn from real incidents in your sector and region."},
+        {"title": "Measurable outcomes", "body": "Pre- and post-training assessments quantify capability shift, not just attendance."}
+      ],
+      "engagement": [
+        {"title": "Needs analysis", "body": "Map current capability against role-based competence requirements and recent incidents."},
+        {"title": "Curriculum design & delivery", "body": "Blended workshops, e-learning, and simulations sequenced to your operational calendar."},
+        {"title": "Reinforcement & retest", "body": "Refresher cycles, drills, and metrics to ensure learning sticks."}
+      ],
+      "related": [
+        {"name": "Capacity Building Services", "kind": "Consulting", "href": "/consulting/capacity-building/", "body": "Structured organizational capability development and knowledge transfer."},
+        {"name": "Corporate Forensic Investigations", "kind": "Service", "href": "/services/forensic-investigations/", "body": "Evidence-based investigations into fraud, misconduct, and security incidents."},
+        {"name": "Safety Evacuation Programs", "kind": "Consulting", "href": "/consulting/safety-evacuation/", "body": "Coordinated emergency evacuation planning and rehearsal."}
+      ]
+    },
+
+    {
+      "slug": "forensic-investigations",
+      "name": "Corporate Forensic Investigations",
+      "summary": "Forensic methodologies applied to identify facts, examine evidence, and produce objective, defensible findings for executive decision-making.",
+      "meta_desc": "Corporate forensic investigations — fraud, misconduct, and security incidents handled with strict discretion and full legal defensibility.",
+      "image_seed": "gts-forensic",
+      "lede": "Forensic methodologies applied with strict discretion and full legal defensibility — supporting organizations in addressing fraud, misconduct allegations, and security incidents through objective, evidence-based findings.",
+      "overview": [
+        "We deliver comprehensive corporate investigative services, applying forensic methodologies to identify facts, examine evidence, and enable well-informed decision-making. Our work supports organizations in addressing internal concerns, fraud investigations, misconduct allegations, and security incidents.",
+        "Through established investigative frameworks and advanced analytical tools, we provide objective, evidence-based findings together with practical recommendations that strengthen accountability and support effective risk mitigation.",
+        "All engagements are conducted with strict discretion and professionalism to ensure confidentiality, while maintaining accuracy, credibility, and full legal defensibility of outcomes. Our reports are structured to provide clear documentation, thorough evidential analysis, and strategic guidance aimed at enhancing governance, reducing organizational exposure, and preventing the recurrence of incidents."
+      ],
+      "coverage": [
+        "Internal fraud and misconduct inquiries",
+        "Asset misappropriation and corruption investigations",
+        "Whistleblower and ethics-line case management",
+        "Forensic evidence collection and chain-of-custody",
+        "Witness and subject interview programs",
+        "Forensic data analysis and digital evidence review",
+        "Recovery, root-cause, and prevention reporting"
+      ],
+      "why_gts": [
+        {"title": "Discretion as discipline", "body": "Engagements are run on a need-to-know basis with clear protocols for confidentiality."},
+        {"title": "Legally defensible", "body": "Evidence, interviews, and reports are documented to withstand civil and criminal scrutiny."},
+        {"title": "Findings into prevention", "body": "Every report ends with controls that close the gap so the same loss does not recur."}
+      ],
+      "engagement": [
+        {"title": "Scoping & instruction", "body": "Confidential briefing with sponsor, scope definition, and engagement letter."},
+        {"title": "Evidence & interviews", "body": "Document review, data analysis, and structured interviews under chain-of-custody."},
+        {"title": "Reporting & remediation", "body": "Findings report, recommended actions, and optional follow-through with HR or counsel."}
+      ],
+      "related": [
+        {"name": "Tailored Investigations", "kind": "Consulting", "href": "/consulting/tailored-investigations/", "body": "Discreet, structured investigations across fraud, misconduct, and irregularity."},
+        {"name": "Vetting & Due Diligence", "kind": "Consulting", "href": "/consulting/vetting-due-diligence/", "body": "Background checks and risk screening for individuals, partners, and vendors."},
+        {"name": "Business Process Control Audits", "kind": "Consulting", "href": "/consulting/business-process-audits/", "body": "Internal control evaluation to identify exposure to fraud and procedural failure."}
+      ]
+    },
+
+    {
+      "slug": "supply-chain-security",
+      "name": "Supply Chain Security Solutions",
+      "summary": "Intelligence-led, technology-enabled protection of logistics and distribution networks — end-to-end visibility and resilience across borders.",
+      "meta_desc": "Supply chain security solutions — risk assessments, route analysis, cargo protection, and resilience planning for domestic and cross-border operations across Africa.",
+      "image_seed": "gts-supply",
+      "lede": "Intelligence-led, technology-enabled protection for the logistics and distribution networks your business depends on — end-to-end visibility, control, and resilience.",
+      "overview": [
+        "Modern supply chains face growing exposure to disruption, theft, fraud, and geopolitical instability. Our Supply Chain Security Solutions are designed to safeguard the integrity, efficiency, and resilience of logistics and distribution networks against an evolving risk landscape. We deliver intelligence-led, technology-enabled approaches that enhance end-to-end visibility and control across both domestic and cross-border operations.",
+        "Our services include comprehensive risk assessments, route and network analysis, cargo protection strategies, and supply chain vulnerability assessments aimed at strengthening security across the logistics ecosystem. We also support business continuity and operational resilience planning to enable rapid recovery and minimize disruption in the event of security incidents or external shocks.",
+        "Through proactive monitoring and tailored security frameworks, we help organizations maintain continuity of operations, reduce losses, and develop secure, transparent, and resilient supply chain systems."
+      ],
+      "coverage": [
+        "Supply chain risk and vulnerability assessment",
+        "Route and network analysis",
+        "Cargo and high-value-load protection strategies",
+        "Cross-border and customs-zone security",
+        "Third-party logistics provider vetting and oversight",
+        "Real-time monitoring and exception response",
+        "Business continuity and recovery planning"
+      ],
+      "why_gts": [
+        {"title": "End-to-end visibility", "body": "We map the chain from origin to last mile, then secure the segments that matter most."},
+        {"title": "Cross-border fluency", "body": "Deep working knowledge of African corridors — customs, checkpoints, and the actors in between."},
+        {"title": "Loss prevention over policing", "body": "Designs that prevent losses upstream rather than chase them after the fact."}
+      ],
+      "engagement": [
+        {"title": "Chain mapping & risk profiling", "body": "End-to-end documentation of nodes, routes, and dependencies — with risk scoring."},
+        {"title": "Control design", "body": "Layered controls covering people, process, and technology across the full chain."},
+        {"title": "Live monitoring & response", "body": "Continuous oversight with rapid escalation protocols for in-transit incidents."}
+      ],
+      "related": [
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated protection frameworks for organizational security."},
+        {"name": "Travel Security Programs", "kind": "Consulting", "href": "/consulting/travel-security/", "body": "Personnel safety on domestic and international movements."},
+        {"name": "Command Centre Operations", "kind": "Service", "href": "/services/command-centre/", "body": "24/7 oversight and coordinated incident response."}
+      ]
+    },
+
+    {
+      "slug": "executive-protection",
+      "name": "Executive Protection Services",
+      "summary": "Discreet, professional protection for corporate executives, dignitaries, and high-profile individuals — built on intelligence, planning, and trained specialists.",
+      "meta_desc": "Executive protection services — discreet personal security for executives, dignitaries, and high-profile individuals across Africa.",
+      "image_seed": "gts-executive",
+      "lede": "Discreet, professional protection for corporate executives, dignitaries, and high-profile individuals — combining proactive risk intelligence, meticulous planning, and highly trained protection specialists.",
+      "overview": [
+        "We deliver discreet, professional protection services for corporate executives, dignitaries, and high-profile individuals requiring enhanced personal security. Our approach combines proactive risk intelligence, meticulous planning, and highly trained protection specialists to safeguard client safety and ensure uninterrupted operational continuity.",
+        "Each protection program is tailored to the client's profile, itinerary, and evolving threat environment, with strict emphasis on precision, discretion, and confidentiality."
+      ],
+      "coverage": [
+        "Principal threat and vulnerability assessment",
+        "Advance work and venue reconnaissance",
+        "Close protection teams and detail leadership",
+        "Secure transportation and driver programs",
+        "Residence and family protection programs",
+        "Travel planning and route security",
+        "Crisis response and medical preparedness"
+      ],
+      "why_gts": [
+        {"title": "Intelligence before motorcades", "body": "Threat picture drives the detail, not the other way around. Quiet protection over conspicuous presence."},
+        {"title": "Vetted specialists", "body": "Selected, trained, and continually re-qualified. Background-screened to international standards."},
+        {"title": "Continuity, not theatre", "body": "Programmes designed so principals can operate normally — meetings, travel, family life."}
+      ],
+      "engagement": [
+        {"title": "Principal profiling", "body": "Confidential intake covering threat picture, lifestyle, travel patterns, and family considerations."},
+        {"title": "Program design", "body": "Tailored protection package — team size, vehicles, advance work, residence integration."},
+        {"title": "Operate & review", "body": "Continuous threat monitoring, after-action reviews, and quarterly programme adjustment."}
+      ],
+      "related": [
+        {"name": "Travel Security Programs", "kind": "Consulting", "href": "/consulting/travel-security/", "body": "Structured travel risk programs for domestic and international movement."},
+        {"name": "Residential Security Services", "kind": "Service", "href": "/services/residential-security/", "body": "Comprehensive protection for private homes, estates, and communities."},
+        {"name": "Events Security Services", "kind": "Service", "href": "/services/events-security/", "body": "End-to-end security for corporate functions and high-profile occasions."}
+      ]
+    },
+
+    {
+      "slug": "events-security",
+      "name": "Events Security Services",
+      "summary": "Comprehensive protection frameworks for large-scale gatherings — from pre-event risk assessment to on-site execution and post-event evaluation.",
+      "meta_desc": "Events security services for corporate functions, public events, and high-profile occasions — planning, access control, crowd management, and emergency response.",
+      "image_seed": "gts-events",
+      "lede": "Comprehensive protection frameworks for large-scale gatherings — from pre-event risk assessment and security planning through on-site execution and post-event evaluation.",
+      "overview": [
+        "Large-scale gatherings and corporate events require meticulous planning and coordinated security execution. Our Events Security Services deliver comprehensive protection frameworks, including security planning, access control, crowd and perimeter management, emergency response preparedness, and deployment of trained on-site security personnel to ensure safe, orderly, and efficient event operations.",
+        "Our service is designed to support the entire event lifecycle, from pre-event risk assessment and security planning through to on-site execution and post-event evaluation. We begin with detailed threat identification and venue-specific risk assessments to identify vulnerabilities and define operational requirements. Based on these insights, we develop tailored security strategies encompassing access control protocols, crowd management systems, emergency preparedness measures, and structured incident response coordination.",
+        "Experienced security personnel are deployed to provide visible deterrence, enforce access control procedures, and manage guest flow, ensuring a secure environment while maintaining operational continuity and a positive attendee experience. In addition, we establish clear communication protocols and command-and-control structures to enable real-time situational awareness and rapid response to emerging incidents throughout the event."
+      ],
+      "coverage": [
+        "Pre-event threat and venue risk assessment",
+        "Access control and accreditation systems",
+        "Crowd management and perimeter security",
+        "VIP and stage-side protection",
+        "Emergency preparedness and medical liaison",
+        "Real-time command-and-control and incident response",
+        "Post-event review and continuous improvement"
+      ],
+      "why_gts": [
+        {"title": "Guest-experience-aware", "body": "Security that fades into the background. Attendees feel safe without feeling policed."},
+        {"title": "Lifecycle ownership", "body": "We own the security picture from concept to debrief — not just the doors on the day."},
+        {"title": "Command discipline", "body": "Clear C2 structure, live communications, and rehearsed escalation for incidents."}
+      ],
+      "engagement": [
+        {"title": "Pre-event planning", "body": "Venue walk-throughs, threat assessment, and integrated security plan with event organizers."},
+        {"title": "Deployment & execution", "body": "Trained personnel, real-time command, and disciplined access control on event day."},
+        {"title": "Debrief & learn", "body": "After-action review captures lessons for the next event in the series."}
+      ],
+      "related": [
+        {"name": "Manned Guarding Services", "kind": "Service", "href": "/services/manned-guarding/", "body": "Professional, trained security personnel for assets and venues."},
+        {"name": "Executive Protection", "kind": "Service", "href": "/services/executive-protection/", "body": "Personal protection for VIP attendees and dignitaries."},
+        {"name": "Command Centre Operations", "kind": "Service", "href": "/services/command-centre/", "body": "Live oversight and coordination for distributed operations."}
+      ]
+    },
+
+    {
+      "slug": "manned-guarding",
+      "name": "Manned Guarding Services",
+      "summary": "Professionally trained, carefully vetted security personnel deployed to safeguard people, property, and assets across diverse environments.",
+      "meta_desc": "Manned guarding services — vetted, trained security personnel deployed across commercial, industrial, residential, and institutional environments.",
+      "image_seed": "gts-guarding",
+      "lede": "Professional, highly trained security personnel — carefully selected, thoroughly vetted, and deployed with structured operational procedures that combine human vigilance and swift incident response.",
+      "overview": [
+        "We deliver professional, highly trained security personnel dedicated to safeguarding people, property, and assets across commercial, industrial, residential, and institutional environments. Our service is founded on a proactive security approach that integrates human vigilance with structured operational procedures to ensure consistent protection and swift incident response.",
+        "All security officers are carefully selected, thoroughly vetted, and comprehensively trained in access control, patrol operations, incident reporting, conflict de-escalation, and emergency response protocols. Each deployment is customized to align with the client's specific risk profile, ensuring appropriate coverage, responsiveness, and situational awareness at all times.",
+        "This service strengthens deterrence against unauthorized access, theft, vandalism, and operational disruption, while maintaining a visible security presence that promotes safety and order. Integration with command center operations and technical security systems enables real-time monitoring, coordination, and escalation where required."
+      ],
+      "coverage": [
+        "Vetted, uniformed security officers",
+        "Access control and visitor management",
+        "Foot and mobile patrol operations",
+        "Incident reporting and documentation",
+        "Conflict de-escalation and emergency response",
+        "Integration with CCTV and command centre",
+        "Supervised shift management and quality audits"
+      ],
+      "why_gts": [
+        {"title": "Selection is the strategy", "body": "Officers are vetted, screened, and trained against role profiles — not just rostered."},
+        {"title": "Supervised and audited", "body": "Active supervision and surprise audits prevent the drift that erodes guarding programmes."},
+        {"title": "Technology-augmented", "body": "Patrols, reports, and incidents flow into the command centre — no paper logbooks lost in drawers."}
+      ],
+      "engagement": [
+        {"title": "Risk and post profiling", "body": "Site assessment, post definition, and SOP design tailored to your environment."},
+        {"title": "Deployment & integration", "body": "Trained officers deployed with technology integration and clear escalation chains."},
+        {"title": "Ongoing assurance", "body": "Supervision, refresher training, and quarterly reviews keep the programme sharp."}
+      ],
+      "related": [
+        {"name": "Command Centre Operations", "kind": "Service", "href": "/services/command-centre/", "body": "24/7 oversight, coordination, and incident response."},
+        {"name": "Residential Security Services", "kind": "Service", "href": "/services/residential-security/", "body": "Comprehensive security for homes, estates, and communities."},
+        {"name": "Reception Security Services", "kind": "Service", "href": "/services/reception-security/", "body": "Front-of-house security and visitor management."}
+      ]
+    },
+
+    {
+      "slug": "residential-security",
+      "name": "Residential Security Services",
+      "summary": "Comprehensive residential security combining trained personnel, advanced systems, and proactive risk management — for homes, estates, and communities.",
+      "meta_desc": "Residential security services for homes, estates, and gated communities — trained guards, perimeter monitoring, access control, and CCTV integration.",
+      "image_seed": "gts-residential",
+      "lede": "Comprehensive residential security combining trained personnel, advanced security systems, and proactive risk management — for a safe living environment without compromising comfort or privacy.",
+      "overview": [
+        "We provide comprehensive residential security solutions designed to safeguard private homes, estates, and residential communities against a wide range of threats. Our approach combines trained personnel, advanced security systems, and proactive risk management strategies to ensure a safe and secure living environment for residents and their families.",
+        "Our services include professionally trained residential security guards, 24/7 perimeter monitoring, access control management, routine patrols, and visitor screening. We integrate modern security technologies such as CCTV surveillance, alarm systems, and intrusion detection to enhance visibility and response capabilities. Each solution is tailored to the specific risk profile and layout of the property, ensuring optimal protection without compromising comfort or privacy.",
+        "We emphasize rapid incident response, preventive security planning, and continuous monitoring to deter unauthorized access and reduce vulnerabilities. Whether securing gated communities, apartment complexes, or private estates, our residential security services are designed to deliver peace of mind through reliability, discretion, and operational excellence."
+      ],
+      "coverage": [
+        "Trained residential security officers",
+        "24/7 perimeter monitoring",
+        "Access control and visitor screening",
+        "Routine patrols and night watch",
+        "CCTV, alarm, and intrusion detection integration",
+        "Rapid incident response coordination",
+        "Family privacy protocols"
+      ],
+      "why_gts": [
+        {"title": "Privacy by design", "body": "Security that respects how families actually live — discreet routines, minimal disruption."},
+        {"title": "Layered protection", "body": "Perimeter, access, surveillance, and patrols working together — no single point of failure."},
+        {"title": "Community-aware", "body": "Programmes designed for gated communities reflect both individual homes and shared spaces."}
+      ],
+      "engagement": [
+        {"title": "Property assessment", "body": "Walkthrough, vulnerability mapping, and lifestyle interview with the household."},
+        {"title": "Integrated programme", "body": "Personnel, technology, and procedures designed to work as one system."},
+        {"title": "Maintain & review", "body": "Continuous monitoring, technology upkeep, and quarterly programme reviews."}
+      ],
+      "related": [
+        {"name": "Manned Guarding Services", "kind": "Service", "href": "/services/manned-guarding/", "body": "Trained security personnel for diverse environments."},
+        {"name": "Security Systems Design & Installation", "kind": "Service", "href": "/services/security-systems/", "body": "CCTV, access control, and intrusion detection systems."},
+        {"name": "Executive Protection", "kind": "Service", "href": "/services/executive-protection/", "body": "Discreet personal protection for principals and their families."}
+      ]
+    },
+
+    {
+      "slug": "command-centre",
+      "name": "Command Centre Operations",
+      "summary": "Real-time oversight of security operations — rapid incident response, team coordination, and continuous situational awareness from a centralized hub.",
+      "meta_desc": "Command centre operations — 24/7 oversight, coordinated incident response, and continuous situational awareness through structured protocols and digital reporting.",
+      "image_seed": "gts-command",
+      "lede": "Real-time oversight of security operations — rapid incident response, effective coordination, and continuous situational awareness through structured protocols and intelligence-driven processes.",
+      "overview": [
+        "The services ensure real-time oversight of security operations, enabling rapid incident response, effective coordination of security teams, and continuous situational awareness to strengthen overall security management. Our teams operate through structured protocols, digital reporting systems, and live communication channels that enhance operational efficiency and responsiveness.",
+        "This approach supports the early identification and proactive management of potential threats before escalation. By leveraging centralized command structures and intelligence-driven processes, organizations achieve improved response times, enhanced risk visibility, and greater operational resilience."
+      ],
+      "coverage": [
+        "24/7 manned monitoring with structured shift handover",
+        "Live CCTV review and alarm verification",
+        "Integrated radio and digital communications",
+        "Incident logging, escalation, and dispatch protocols",
+        "Real-time situational reporting to clients",
+        "Mass-notification and crisis communications",
+        "Continuous quality assurance and audit"
+      ],
+      "why_gts": [
+        {"title": "Operators, not watchers", "body": "Staff are trained in tactical decision-making, not just screen monitoring."},
+        {"title": "Designed to scale", "body": "Single-site or multi-country operations — the same operating model, calibrated to scope."},
+        {"title": "Intelligence-coupled", "body": "Live feeds from our intel desk inform command decisions in real time."}
+      ],
+      "engagement": [
+        {"title": "Operating model design", "body": "Define monitoring scope, escalation chains, and reporting cadence with stakeholders."},
+        {"title": "Centre stand-up", "body": "Equip, staff, train, and rehearse — including connection to client systems."},
+        {"title": "Operate & evolve", "body": "Run live operations with continuous improvement based on incident learnings."}
+      ],
+      "related": [
+        {"name": "Manned Guarding Services", "kind": "Service", "href": "/services/manned-guarding/", "body": "Trained security personnel deployed and coordinated through the centre."},
+        {"name": "Security Systems Design & Installation", "kind": "Service", "href": "/services/security-systems/", "body": "CCTV, access control, and alarm platforms feeding the command centre."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated security framework supported by command-and-control."}
+      ]
+    },
+
+    {
+      "slug": "reception-security",
+      "name": "Reception Security Services",
+      "summary": "Professional, security-aware front-desk personnel — welcoming visitors while maintaining identity verification, access control, and situational awareness.",
+      "meta_desc": "Reception security services — professional front-desk personnel providing visitor management, access control, and security monitoring for corporate facilities.",
+      "image_seed": "gts-reception",
+      "lede": "Professional, security-aware reception personnel — providing visitor management, identity verification, access control coordination, and front-desk security monitoring that maintains both hospitality and safety standards.",
+      "overview": [
+        "Reception areas serve as the first point of contact for visitors and require both professionalism and security awareness. Our reception security personnel provide a welcoming yet secure environment for corporate facilities. Services include visitor management, identity verification, access control coordination, and front-desk security monitoring to maintain both hospitality and safety standards.",
+        "We integrate reception security within broader corporate security frameworks to enhance situational awareness and prevent unauthorized access, theft, or disruption. Through structured training, our personnel uphold high standards of professionalism, communication, and customer service while remaining alert to potential threats.",
+        "Our solutions are tailored to client environments including corporate offices, financial institutions, residential complexes, and institutional facilities. We also leverage modern security technologies such as access control systems and visitor management platforms to improve efficiency and accountability."
+      ],
+      "coverage": [
+        "Visitor identification, registration, and screening",
+        "Access control system operation",
+        "Front-desk hospitality and professionalism",
+        "Vendor and contractor coordination",
+        "Mail and package security screening",
+        "Incident reporting and escalation",
+        "Integration with CCTV and command centre"
+      ],
+      "why_gts": [
+        {"title": "Hospitality and security in one", "body": "Visitors meet a calm, professional front desk — and an alert security layer."},
+        {"title": "Trained for both jobs", "body": "Personnel hold customer-service standards AND security competencies."},
+        {"title": "Integrated, not isolated", "body": "Reception is one node in your security network — connected to access control and the command centre."}
+      ],
+      "engagement": [
+        {"title": "Front-desk audit", "body": "Assess current visitor flow, controls, and incidents at primary and secondary entrances."},
+        {"title": "Procedure & technology design", "body": "Define SOPs, visitor management platform, and badge and credential standards."},
+        {"title": "Deploy & supervise", "body": "Place trained personnel and supervise quality, courtesy, and security adherence."}
+      ],
+      "related": [
+        {"name": "Manned Guarding Services", "kind": "Service", "href": "/services/manned-guarding/", "body": "Vetted security officers for diverse environments."},
+        {"name": "Security Systems Design & Installation", "kind": "Service", "href": "/services/security-systems/", "body": "Access control and visitor management technology."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated organizational security frameworks."}
+      ]
+    },
+
+    {
+      "slug": "security-systems",
+      "name": "Security Systems Design & Installation",
+      "summary": "End-to-end design and installation of CCTV, access control, intrusion detection, and integrated security technology — engineered for real environments.",
+      "meta_desc": "Security systems design and installation — CCTV, access control, intrusion detection, perimeter protection, and alarm monitoring for corporate, commercial, and residential clients.",
+      "image_seed": "gts-systems",
+      "lede": "End-to-end design and installation of integrated security technology — CCTV, access control, intrusion detection, perimeter protection, and alarm monitoring — engineered to real operational requirements.",
+      "overview": [
+        "We provide end-to-end Security Systems Design and Installation services tailored to the unique risk profile and operational requirements of each client. Our approach combines technical expertise, intelligence-led risk assessment, and advanced security technologies to deliver fully integrated protection solutions for diverse environments, including corporate facilities, commercial properties, institutions, and residential developments.",
+        "Each project begins with a comprehensive site evaluation to identify vulnerabilities, assess threat exposure, and determine optimal system architecture. Based on these findings, we design customized security solutions that may include CCTV surveillance systems, access control solutions, intruder detection systems, perimeter protection technologies, and alarm monitoring platforms. All systems are engineered for seamless integration to ensure real-time visibility, rapid incident response, and centralized control.",
+        "Our installation process adheres to industry best practices, ensuring precision deployment, system reliability, and long-term operational efficiency. We also provide configuration, user training, and post-installation support to guarantee sustained performance and adaptability as security needs evolve."
+      ],
+      "coverage": [
+        "Site evaluation and security technology design",
+        "CCTV surveillance systems",
+        "Access control solutions",
+        "Intruder detection and alarm systems",
+        "Perimeter protection technologies",
+        "Centralized monitoring platform integration",
+        "Configuration, training, and post-installation support"
+      ],
+      "why_gts": [
+        {"title": "Designed before specified", "body": "Architecture comes from your risk picture — not from the catalogue of preferred vendors."},
+        {"title": "Integration as standard", "body": "Every system is engineered to talk to the others. One pane of glass, not five."},
+        {"title": "Designed to outlast the warranty", "body": "Build quality and serviceability matter. We design for ten years of useful life."}
+      ],
+      "engagement": [
+        {"title": "Site survey & design", "body": "Walk the site, model the risks, draft the architecture and bill of materials."},
+        {"title": "Deploy & commission", "body": "Install, integrate, configure, and test with documented commissioning."},
+        {"title": "Support & evolve", "body": "User training, maintenance contracts, and upgrade paths as needs change."}
+      ],
+      "related": [
+        {"name": "Command Centre Operations", "kind": "Service", "href": "/services/command-centre/", "body": "Live monitoring and coordinated response from a central hub."},
+        {"name": "Residential Security Services", "kind": "Service", "href": "/services/residential-security/", "body": "Integrated security for homes, estates, and gated communities."},
+        {"name": "Corporate Security Services", "kind": "Service", "href": "/services/corporate-security/", "body": "Integrated organizational protection frameworks."}
+      ]
+    }
+  ]
+}

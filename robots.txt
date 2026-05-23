@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_assemble/
+Disallow: /admin/
+
+Sitemap: https://gtsriskadvisory.com/sitemap.xml
