@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "slug": "intelligence-reports",
+      "number": "01",
+      "name": "Customized Intelligence Reports",
+      "lede": "Tailored analytical products designed to meet your specific operational, sectoral, and geographic intelligence needs.",
+      "body": [
+        "The reports are tailored analytical products designed to meet the specific operational, sectoral, and geographic intelligence needs of each client. These reports are developed using a structured intelligence methodology that integrates verified open-source intelligence, field insights, and contextual analysis to ensure accuracy, relevance, and reliability.",
+        "Each report is carefully designed to support executive leadership, security teams, and decision-makers with actionable intelligence that directly informs strategy, planning, and operational execution. The reports also include trend analysis, forecasting, and scenario-based evaluations to support forward-looking risk management."
+      ],
+      "image": "/intelligence/assets/intelligence-reports.jpg",
+      "image_webp": "/intelligence/assets/intelligence-reports.webp",
+      "classified_stamp": "CLASSIFIED · GTS · 001",
+      "cta": null
+    },
+    {
+      "slug": "political-country-risk",
+      "number": "02",
+      "name": "Political & Country Risk Analysis",
+      "lede": "In-depth evaluation of geopolitical, governance, regulatory, and security conditions that may impact your operations, investments, and strategic decisions.",
+      "body": [
+        "Political & Country Risk Analysis provides in-depth evaluation of geopolitical, governance, regulatory, and security conditions that may impact business operations, investments, and strategic decision-making. This service examines both current developments and emerging trends within a country or region to provide a comprehensive understanding of the operating environment.",
+        "Key focus areas include political stability, electoral processes, government transitions, civil unrest, policy shifts, and regulatory frameworks. The analysis also assesses macro-level risks such as economic volatility, corruption exposure, and institutional strength, alongside localized risks including protests, conflict dynamics, and social instability. Scenario modeling and forecasting techniques are applied to anticipate potential developments and their implications for organizations.",
+        "This service supports investors, corporations, NGOs, and government entities in making informed decisions regarding market entry, expansion, or continuity of operations. It helps clients understand not only the current risk landscape but also how evolving political conditions may influence long-term strategic objectives."
+      ],
+      "image": "/intelligence/assets/political-country-risk.jpg",
+      "image_webp": "/intelligence/assets/political-country-risk.webp",
+      "classified_stamp": "CLASSIFIED · GTS · 002",
+      "cta": null
+    },
+    {
+      "slug": "daily-monitoring-briefs",
+      "number": "03",
+      "name": "Daily Monitoring Briefs",
+      "lede": "Concise, timely, intelligence-driven updates on the critical developments affecting your operational and risk environment.",
+      "body": [
+        "The briefs provide concise, timely, and intelligence-driven updates on critical developments affecting clients' operational and risk environments. Each briefing consolidates relevant updates from multiple verified sources and presents them in a structured, easy-to-read format.",
+        "Coverage typically includes breaking security incidents, political developments, regulatory updates, sector-specific alerts, and regional or global risk highlights. The briefs function as an early warning mechanism, enhancing organizational readiness and responsiveness in dynamic environments."
+      ],
+      "image": "/intelligence/assets/daily-monitoring-briefs.jpg",
+      "image_webp": "/intelligence/assets/daily-monitoring-briefs.webp",
+      "classified_stamp": "CLASSIFIED · GTS · 003",
+      "cta": null
+    },
+    {
+      "slug": "situational-risk-analysis",
+      "number": "04",
+      "name": "Situational Risk Analysis",
+      "lede": "Real-time, incident-driven assessments of evolving threats and operational conditions — with mitigation guidance, not just analysis.",
+      "body": [
+        "Delivers real-time, incident-driven assessments of evolving threats and operational conditions that may affect organizations, assets, or personnel. This service focuses on analyzing specific events or emerging situations to determine their immediate and potential future impact on business continuity and security posture. Each analysis evaluates the nature of the incident, its severity, escalation potential, and geographic or sectoral implications.",
+        "A key component of this service is the provision of mitigation guidance, offering clear recommendations to reduce exposure, manage risk, and ensure operational continuity. This may include advisory on movement restrictions, asset protection measures, communication protocols, or contingency planning."
+      ],
+      "image": "/intelligence/assets/situational-risk-analysis.jpg",
+      "image_webp": "/intelligence/assets/situational-risk-analysis.webp",
+      "classified_stamp": "CLASSIFIED · GTS · 004",
+      "cta": null
+    },
+    {
+      "slug": "risk-heat-map",
+      "number": "05",
+      "name": "Risk Heat Map",
+      "lede": "A visual intelligence tool to identify, prioritize, and manage risks based on likelihood and potential impact — across geographies, business units, or sectors.",
+      "body": [
+        "The Risk Heat Map is a visual intelligence tool designed to help organizations identify, prioritize, and manage risks based on their likelihood and potential impact. It is customized to reflect geographic regions, business units, or industry-specific risk profiles, offering flexibility for diverse organizational needs.",
+        "By providing a clear, at-a-glance overview of risk exposure, the Risk Heat Map enhances strategic planning, resource allocation, and executive decision-making. It enables leadership teams to focus attention and resources where they are needed most, improving overall resilience and risk governance."
+      ],
+      "image": "/intelligence/assets/risk-heat-map.jpg",
+      "image_webp": "/intelligence/assets/risk-heat-map.webp",
+      "classified_stamp": "CLASSIFIED · GTS · 005",
+      "cta": { "label": "Open the Africa Risk Heat Map", "href": "/intelligence/heat-map/" }
+    }
+  ]
+}
