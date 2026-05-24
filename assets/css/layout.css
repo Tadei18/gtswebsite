@@ -163,34 +163,23 @@
   min-height: 72px;
 }
 
-/* Logo */
-.logo {
+/* Brand logo (header + mobile-nav) */
+.brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--s-3);
   text-decoration: none;
-  color: var(--color-ink-high);
+  opacity: 0.92;
+  transition: opacity 200ms var(--ease-out);
 }
-.logo__mark {
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: -0.02em;
-  color: var(--color-ink-high);
+.brand:hover,
+.brand:focus-visible { opacity: 1; }
+.brand__logo {
+  height: 64px;
+  width: auto;
+  display: block;
 }
-.logo__rule {
-  width: 1px;
-  height: 24px;
-  background: var(--color-gold);
-}
-.logo__name {
-  font-family: var(--font-sans);
-  font-size: var(--t-xs);
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-ink-low);
-}
+/* Mobile-nav overlay variant — slightly smaller */
+.mobile-nav__head .brand__logo { height: 52px; }
 
 /* Nav */
 .nav {
@@ -465,6 +454,12 @@
   transition: color var(--d-fast) var(--ease-out);
 }
 .footer__col a:hover { color: var(--color-gold); }
+.footer__logo {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-bottom: var(--s-5);
+}
 .footer__positioning {
   color: var(--color-ink-mid);
   font-size: var(--t-small);
