@@ -1,0 +1,4 @@
+# Media / Gallery section was removed; preserve link equity from old
+# bookmarks, search-engine caches, and any stray inbound references.
+/media     /  301
+/media/*   /  301
