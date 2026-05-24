@@ -20,6 +20,17 @@
       .replace(/'/g, '&#39;');
   }
 
+  // Short anchor aliases used by the global Intelligence nav dropdown.
+  // The full canonical id stays "product-<slug>"; these aliases let menu
+  // links like /intelligence/#reports scroll to the right section.
+  const ANCHOR_ALIAS = {
+    'intelligence-reports':     'reports',
+    'political-country-risk':   'political',
+    'daily-monitoring-briefs':  'monitoring',
+    'situational-risk-analysis':'situational',
+    'risk-heat-map':            'heatmap',
+  };
+
   function productMarkup(p, idx) {
     const splitClass = idx % 2 === 0 ? 'split' : 'split split--reverse';
     const bodyHtml = (p.body || []).map((para) => `<p>${escapeHtml(para)}</p>`).join('');
@@ -28,8 +39,11 @@
       : '';
     const stamp = p.classified_stamp ? `<span class="stamp">${escapeHtml(p.classified_stamp)}</span>` : '';
     const altText = `Visual reference for ${p.name}`;
+    const alias = ANCHOR_ALIAS[p.slug];
+    const aliasAnchor = alias ? `<span id="${escapeHtml(alias)}" class="anchor-alias" aria-hidden="true"></span>` : '';
 
     return `
+      ${aliasAnchor}
       <article class="product-block" id="product-${escapeHtml(p.slug)}">
         <div class="container">
           <div class="${splitClass}">

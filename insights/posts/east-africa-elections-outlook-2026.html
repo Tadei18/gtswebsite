@@ -144,8 +144,33 @@
               </div>
             </li>
             <li class="nav__item"><a class="nav__link" href="/industries/">Industries</a></li>
-            <li class="nav__item"><a class="nav__link" href="/intelligence/">Intelligence</a></li>
-            <li class="nav__item"><a class="nav__link" href="/insights/">Insights</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="/intelligence/" data-active-paths="/intelligence/,/insights/" aria-haspopup="true" aria-expanded="false">Intelligence
+                <svg class="nav__caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M6 8 0 0h12z" fill="currentColor"/></svg>
+              </a>
+              <div class="dropdown dropdown--two-col" role="menu">
+                <div class="dropdown__col">
+                  <h4>Intelligence Advisory</h4>
+                  <ul class="dropdown__list">
+                    <li><a class="dropdown__link" href="/intelligence/#reports"><strong>Customized Intelligence Reports</strong><small>Tailored analytical products</small></a></li>
+                    <li><a class="dropdown__link" href="/intelligence/#political"><strong>Political &amp; Country Risk Analysis</strong><small>Geopolitical and regulatory</small></a></li>
+                    <li><a class="dropdown__link" href="/intelligence/#monitoring"><strong>Daily Monitoring Briefs</strong><small>Verified-source updates</small></a></li>
+                    <li><a class="dropdown__link" href="/intelligence/#situational"><strong>Situational Risk Analysis</strong><small>Real-time, incident-driven</small></a></li>
+                    <li><a class="dropdown__link" href="/intelligence/heat-map/"><strong>Risk Heat Map</strong><small>Africa-wide visual prioritisation</small></a></li>
+                  </ul>
+                  <a href="/intelligence/" class="dropdown__view-all">View all intelligence services →</a>
+                </div>
+                <div class="dropdown__col">
+                  <h4>Insights &amp; Briefings</h4>
+                  <div class="dropdown__posts" id="intel-dropdown-posts" data-skeleton="3">
+                    <span class="dropdown__post is-skeleton" aria-hidden="true"><span class="skeleton-line skeleton-line--meta"></span><span class="skeleton-line skeleton-line--title"></span></span>
+                    <span class="dropdown__post is-skeleton" aria-hidden="true"><span class="skeleton-line skeleton-line--meta"></span><span class="skeleton-line skeleton-line--title"></span></span>
+                    <span class="dropdown__post is-skeleton" aria-hidden="true"><span class="skeleton-line skeleton-line--meta"></span><span class="skeleton-line skeleton-line--title"></span></span>
+                  </div>
+                  <a href="/insights/" class="dropdown__view-all">All insights →</a>
+                </div>
+              </div>
+            </li>
             <li class="nav__item"><a class="nav__link" href="/careers/">Careers</a></li>
             <li class="nav__item"><a class="nav__link" href="/contact/">Contact</a></li>
           </ul>
@@ -206,8 +231,20 @@
         </div>
       </details>
       <a class="mobile-nav__link" href="/industries/">Industries</a>
-      <a class="mobile-nav__link" href="/intelligence/">Intelligence</a>
-      <a class="mobile-nav__link" href="/insights/">Insights</a>
+      <details class="mobile-nav__group">
+        <summary>Intelligence</summary>
+        <div class="mobile-nav__sublist" role="region" aria-label="Intelligence menu">
+          <a href="/intelligence/">Intelligence Advisory</a>
+          <a href="/intelligence/#reports">Customized Intelligence Reports</a>
+          <a href="/intelligence/#political">Political &amp; Country Risk Analysis</a>
+          <a href="/intelligence/#monitoring">Daily Monitoring Briefs</a>
+          <a href="/intelligence/#situational">Situational Risk Analysis</a>
+          <a href="/intelligence/heat-map/">Risk Heat Map</a>
+          <div class="mobile-nav__sep" aria-hidden="true"></div>
+          <a href="/insights/">Latest Insights</a>
+          <div class="mobile-nav__posts" id="mobile-intel-posts"></div>
+        </div>
+      </details>
       <a class="mobile-nav__link" href="/careers/">Careers</a>
       <a class="mobile-nav__link" href="/contact/">Contact</a>
     </div>
@@ -410,6 +447,7 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/nav-posts.js" defer></script>
 
 </body>
 </html>

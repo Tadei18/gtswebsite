@@ -196,14 +196,23 @@
      ----------------------------------------------------------------------- */
   function highlightActiveNav() {
     const path = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '/');
+
+    const matches = (prefix) => {
+      if (!prefix) return false;
+      const n = prefix.replace(/\/index\.html$/, '/').replace(/\/$/, '/');
+      return path === n || (n !== '/' && path.startsWith(n));
+    };
+
     document.querySelectorAll('.nav__link, .mobile-nav__link').forEach((a) => {
       const href = a.getAttribute('href');
-      if (!href || href === '/') return;
-      const normalized = href.replace(/\/index\.html$/, '/').replace(/\/$/, '/');
-      if (path === normalized || path.startsWith(normalized) && normalized !== '/') {
-        a.classList.add('is-active');
-      }
+      // `data-active-paths` lets one nav item own multiple URL prefixes
+      // (e.g. the merged Intelligence dropdown covers both /intelligence/ and /insights/).
+      const extra = (a.getAttribute('data-active-paths') || '')
+        .split(',').map((s) => s.trim()).filter(Boolean);
+      const prefixes = extra.length ? extra : (href ? [href] : []);
+      if (prefixes.some(matches)) a.classList.add('is-active');
     });
+
     if (path === '/' || path === '') {
       const home = document.querySelector('.nav__link[href="/"]');
       if (home) home.classList.add('is-active');
