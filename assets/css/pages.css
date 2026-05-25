@@ -1089,7 +1089,8 @@
   border-bottom: 1px solid var(--color-border);
 }
 .post-body .author__avatar {
-  width: 48px; height: 48px;
+  width: 32px; height: 32px;
+  flex-shrink: 0;
   border-radius: 50%;
   background: var(--color-surface-2);
   border: 1px solid var(--color-gold);
@@ -1098,6 +1099,8 @@
   justify-content: center;
   font-family: var(--font-serif);
   font-weight: 600;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
   color: var(--color-gold);
 }
 .post-body .author__name { font-family: var(--font-serif); font-size: 1.125rem; color: var(--color-ink-high); }
@@ -1114,6 +1117,28 @@
    CAREERS
    ------------------------------------------------------------------------- */
 .job-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--color-border); background: var(--color-surface-2); }
+.job-list--empty { border: none; background: transparent; }
+
+/* No active openings — warm holding state */
+.no-openings {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  padding: var(--s-7) var(--s-6);
+  text-align: center;
+}
+.no-openings__title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-ink-high);
+  margin: var(--s-3) 0 var(--s-4);
+}
+.no-openings__body {
+  max-width: 60ch;
+  margin: 0 auto var(--s-6);
+  color: var(--color-ink-mid);
+  line-height: 1.65;
+}
+#general-application { scroll-margin-top: 96px; }
 .job-row {
   display: grid;
   grid-template-columns: 1fr 200px 160px auto;

@@ -94,6 +94,13 @@
     cards.forEach((el) => io.observe(el));
   }
 
+  // Hide the whole Leadership section (heading + grid) when there's no data,
+  // so the surrounding sections flow together with no double-gap.
+  function hideSection(grid) {
+    const section = grid.closest('#leadership-section') || grid.closest('section');
+    if (section) section.style.display = 'none';
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
     const grid = document.getElementById('leaders-grid');
     if (!grid) return;
@@ -103,11 +110,17 @@
       const data = await res.json();
       if (!data || !Array.isArray(data.team)) throw new Error('team.json shape invalid');
 
+      if (data.team.length === 0) {
+        hideSection(grid);
+        return;
+      }
+
       grid.innerHTML = data.team.map(cardMarkup).join('');
       observeCards(Array.from(grid.querySelectorAll('.leader')));
     } catch (err) {
-      // Leave the grid empty — page remains usable.
+      // On failure, hide the section rather than leaving an empty grid.
       console.error('Leadership grid failed to load:', err);
+      hideSection(grid);
     }
   });
 })();

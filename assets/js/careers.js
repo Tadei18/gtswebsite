@@ -15,16 +15,62 @@
     try {
       const res = await fetch('/data/jobs.json');
       const data = await res.json();
-      JOBS = data.jobs;
+      JOBS = Array.isArray(data.jobs) ? data.jobs : [];
     } catch (err) {
       console.error('Could not load jobs.json:', err);
       JOBS = [];
     }
 
+    if (JOBS.length === 0) {
+      renderNoOpenings(list);
+      return; // no filters, no rows, no modal needed
+    }
+
+    renderRows(list);
     bindFilters();
     bindRowClicks();
     bindModalClose();
   });
+
+  function renderNoOpenings(list) {
+    // Hide the (now-pointless) filter/search UI.
+    const filters = document.getElementById('job-filters');
+    if (filters) filters.style.display = 'none';
+
+    list.classList.add('job-list--empty');
+    list.innerHTML = `
+      <div class="no-openings">
+        <span class="eyebrow">Currently</span>
+        <h3 class="no-openings__title">No active openings at this time.</h3>
+        <p class="no-openings__body">We continue to build our team as engagements grow. If your background aligns with our practice areas — corporate security, risk advisory, intelligence analysis, or operations — we welcome expressions of interest for future consideration.</p>
+        <a href="#general-application" class="btn btn--primary no-openings__cta">Submit a general application →</a>
+      </div>
+    `;
+
+    const cta = list.querySelector('.no-openings__cta');
+    if (cta) {
+      cta.addEventListener('click', (e) => {
+        const target = document.getElementById('general-application');
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const focusable = target.querySelector('a, button');
+          if (focusable) focusable.focus({ preventScroll: true });
+        }
+      });
+    }
+  }
+
+  function renderRows(list) {
+    list.innerHTML = JOBS.map((job) => `
+      <a class="job-row" href="#job-${job.id}" data-job="${job.id}">
+        <div class="job-row__title">${job.title}</div>
+        <div class="job-row__dept">${job.department}</div>
+        <div class="job-row__loc">${job.location}</div>
+        <div class="job-row__cta">View role →</div>
+      </a>
+    `).join('');
+  }
 
   function bindFilters() {
     const dept = document.getElementById('job-filter-dept');
