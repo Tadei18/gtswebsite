@@ -49,7 +49,8 @@
     if (!header) return;
     let scrolled = false;
     const onScroll = () => {
-      const next = window.scrollY > 24;
+      // Past 80px: condense the header (shrinks the enlarged logo, tightens padding, adds blur).
+      const next = window.scrollY > 80;
       if (next !== scrolled) {
         scrolled = next;
         header.classList.toggle('is-scrolled', scrolled);

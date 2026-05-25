@@ -133,10 +133,23 @@
 .pre-header__right .socials a:hover { color: var(--color-gold); }
 
 @media (max-width: 900px) {
-  .pre-header__right .contact { display: none; }
+  /* Phone is the most actionable contact on mobile — keep it, drop email + separator */
+  .pre-header__right .contact:nth-child(1),
+  .pre-header__right .contact:nth-child(2) { display: none; }
+  .pre-header__right .contact:nth-child(3) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 6px;
+  }
+  .pre-header__inner { min-height: 44px; }
 }
 @media (max-width: 640px) {
-  .pre-header__left { font-size: 0.625rem; }
+  .pre-header__inner > .eyebrow { font-size: 0.625rem; }
+}
+@media (max-width: 600px) {
+  /* Free up the row for the phone + socials */
+  .pre-header__inner > .eyebrow { display: none; }
 }
 
 /* -------------------------------------------------------------------------
@@ -160,8 +173,10 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--s-5);
-  min-height: 72px;
+  min-height: 84px;
+  transition: min-height var(--d-fast) var(--ease-out);
 }
+.header.is-scrolled .header__inner { min-height: 64px; }
 
 /* Brand logo (header + mobile-nav) */
 .brand {
@@ -174,10 +189,16 @@
 .brand:hover,
 .brand:focus-visible { opacity: 1; }
 .brand__logo {
-  height: 64px;
+  height: 60px;
   width: auto;
   display: block;
+  transition: height var(--d-fast) var(--ease-out);
 }
+@media (max-width: 768px) {
+  .brand__logo { height: 48px; }
+}
+/* Scroll-shrink: reclaim space once condensed, keep the larger logo impactful at top */
+.header.is-scrolled .brand__logo { height: 44px; }
 /* Mobile-nav overlay variant — slightly smaller */
 .mobile-nav__head .brand__logo { height: 52px; }
 
