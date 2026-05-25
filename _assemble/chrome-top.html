@@ -30,9 +30,17 @@ __EXTRA_HEAD__
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <div class="pre-header">
-    <div class="container">
-      <div class="pre-header__inner">
+  <header class="site-header" id="site-header">
+    <div class="site-header__grid">
+      <a href="/" class="brand-block" aria-label="GTS Risk Advisory — home">
+        <picture>
+          <source media="(max-width: 900px)" srcset="/assets/img/brand/gts-shield.png">
+          <img src="/assets/img/brand/gts-logo-full.svg" alt="GTS Security &amp; Risk Consulting" class="brand-block__logo">
+        </picture>
+      </a>
+      <div class="site-header__main">
+        <div class="pre-header">
+          <div class="pre-header__inner">
         <span class="eyebrow">Operating Across 12+ African Markets</span>
         <div class="pre-header__right">
           <a class="contact" href="mailto:info@gtsriskadvisory.com">info@gtsriskadvisory.com</a>
@@ -47,14 +55,9 @@ __EXTRA_HEAD__
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <header class="header" id="site-header">
-    <div class="container">
-      <div class="header__inner">
-        <a href="/" class="brand" aria-label="GTS Risk Advisory — home"><img src="/assets/img/brand/gts-logo-full.svg" alt="GTS Risk Advisory" class="brand__logo" width="64" height="64"></a>
-        <nav class="nav" aria-label="Primary">
+        </div>
+        <div class="primary-nav">
+          <nav class="nav" aria-label="Primary">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="/about/">About</a></li>
             <li class="nav__item">
@@ -156,11 +159,12 @@ __EXTRA_HEAD__
             <li class="nav__item"><a class="nav__link" href="/contact/">Contact</a></li>
           </ul>
         </nav>
-        <div class="header__cta">
+          <div class="header__cta">
           <a href="/contact/" class="btn btn--primary btn--small">Get a Quote</a>
           <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
           </button>
+        </div>
         </div>
       </div>
     </div>

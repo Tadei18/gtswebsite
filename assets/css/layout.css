@@ -124,8 +124,14 @@
   min-height: 36px;
   gap: var(--s-5);
 }
+.pre-header__inner > .eyebrow {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .pre-header__left  { display: flex; align-items: center; }
-.pre-header__right { display: flex; align-items: center; gap: var(--s-4); }
+.pre-header__right { display: flex; align-items: center; gap: var(--s-4); flex-shrink: 0; }
 .pre-header__right .contact { color: var(--color-ink-low); }
 .pre-header__right .contact:hover { color: var(--color-gold); }
 .pre-header__right .socials { display: flex; gap: var(--s-3); }
@@ -153,32 +159,101 @@
 }
 
 /* -------------------------------------------------------------------------
-   Header / Nav
+   Header — dedicated brand block (top-left corner) + content grid
    ------------------------------------------------------------------------- */
-.header {
+.site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 80;
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
-  transition: background var(--d-fast) var(--ease-out), backdrop-filter var(--d-fast) var(--ease-out);
+  transition: background var(--d-med) var(--ease-out), backdrop-filter var(--d-med) var(--ease-out);
 }
-.header.is-scrolled {
-  background: rgba(10, 14, 26, 0.85);
+.site-header.is-scrolled {
+  background: rgba(10, 14, 26, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
-.header__inner {
+
+/* Two-column grid: brand block spans both rows; the right column stacks
+   the pre-header over the nav. display:contents promotes .pre-header and
+   .primary-nav to grid items so the brand can span them. */
+.site-header__grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "brand pre"
+    "brand nav";
+  align-items: stretch;
+}
+.site-header__main { display: contents; }
+
+.brand-block {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-3) var(--s-5);
+  background: var(--color-surface-1);
+  border-right: 1px solid var(--color-gold);
+  text-decoration: none;
+  transition: background 240ms var(--ease-out);
+  min-width: 180px;
+}
+.brand-block:hover,
+.brand-block:focus-visible { background: var(--color-surface-2); }
+.brand-block__logo {
+  height: 84px;
+  width: auto;
+  display: block;
+  transition: height var(--d-med) var(--ease-out);
+}
+
+.pre-header  { grid-area: pre; }
+.primary-nav {
+  grid-area: nav;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--s-5);
-  min-height: 84px;
-  transition: min-height var(--d-fast) var(--ease-out);
+  min-height: 72px;
+  transition: min-height var(--d-med) var(--ease-out);
 }
-.header.is-scrolled .header__inner { min-height: 64px; }
+.pre-header,
+.primary-nav {
+  padding-left: var(--s-5);
+  padding-right: var(--s-5);
+}
 
-/* Brand logo (header + mobile-nav) */
+/* Sticky compress past 80px: shrink logo, hide pre-header, blur. */
+.site-header.is-scrolled .brand-block__logo { height: 60px; }
+.site-header.is-scrolled .pre-header { display: none; }
+.site-header.is-scrolled .site-header__grid { grid-template-areas: "brand nav"; }
+.site-header.is-scrolled .primary-nav { min-height: 60px; }
+
+/* Collapse to single-column-ish on mobile: brand + hamburger row, pre-header below. */
+@media (max-width: 900px) {
+  .site-header__grid {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand nav"
+      "pre   pre";
+  }
+  .site-header.is-scrolled .site-header__grid { grid-template-areas: "brand nav"; }
+  .brand-block {
+    background: transparent;
+    border-right: none;
+    min-width: 0;
+    justify-content: flex-start;
+    padding: var(--s-3) var(--s-4);
+  }
+  .brand-block:hover, .brand-block:focus-visible { background: transparent; }
+  .brand-block__logo { height: 40px; }
+  .site-header.is-scrolled .brand-block__logo { height: 36px; }
+  .primary-nav { min-height: 0; }
+}
+
+/* Brand link inside the mobile-nav overlay (separate from the header brand-block) */
 .brand {
   display: inline-flex;
   align-items: center;
@@ -188,19 +263,7 @@
 }
 .brand:hover,
 .brand:focus-visible { opacity: 1; }
-.brand__logo {
-  height: 60px;
-  width: auto;
-  display: block;
-  transition: height var(--d-fast) var(--ease-out);
-}
-@media (max-width: 768px) {
-  .brand__logo { height: 48px; }
-}
-/* Scroll-shrink: reclaim space once condensed, keep the larger logo impactful at top */
-.header.is-scrolled .brand__logo { height: 44px; }
-/* Mobile-nav overlay variant — slightly smaller */
-.mobile-nav__head .brand__logo { height: 52px; }
+.brand__logo { height: 52px; width: auto; display: block; }
 
 /* Nav */
 .nav {
