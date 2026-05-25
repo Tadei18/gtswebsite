@@ -74,6 +74,7 @@
   gap: var(--s-5);
 }
 .pillar {
+  position: relative;
   padding: var(--s-6);
   background: var(--color-surface-2);
   border: 1px solid var(--color-border);
@@ -84,6 +85,18 @@
   flex-direction: column;
   gap: var(--s-3);
 }
+/* Gold top accent — animates in on hover, slightly brighter + quicker */
+.pillar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--color-gold-bright);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 240ms var(--ease-out);
+}
+.pillar:hover::before { transform: scaleX(1); }
 .pillar:hover {
   background: var(--color-surface-3);
   border-color: var(--color-border-strong);
@@ -994,6 +1007,7 @@
 @media (max-width: 900px) { .featured-post { grid-template-columns: 1fr; gap: var(--s-5); } }
 
 .post-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--color-surface-2);
@@ -1003,6 +1017,19 @@
   transition: all var(--d-med) var(--ease-out);
   overflow: hidden;
 }
+/* Gold top accent — animates in on hover, slightly brighter + quicker */
+.post-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  z-index: 2;
+  background: var(--color-gold-bright);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 240ms var(--ease-out);
+}
+.post-card:hover::before { transform: scaleX(1); }
 .post-card:hover { border-color: var(--color-border-strong); transform: translateY(-2px); }
 .post-card__cover {
   aspect-ratio: 16/10;

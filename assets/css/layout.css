@@ -633,7 +633,7 @@
    ------------------------------------------------------------------------- */
 .footer {
   background: var(--color-surface-1);
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(212, 182, 110, 0.4); /* gold hairline */
   padding: var(--s-8) 0 var(--s-5);
   color: var(--color-ink-mid);
   font-size: var(--t-small);

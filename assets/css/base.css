@@ -4,26 +4,26 @@
    ========================================================================= */
 
 :root {
-  /* Surfaces */
-  --color-bg:            #0A0E1A;
-  --color-surface-1:     #0F1524;
-  --color-surface-2:     #161E33;
-  --color-surface-3:     #1E2842;
+  /* Surfaces — lifted ~6-10 lightness points to reduce heaviness */
+  --color-bg:            #11182B;
+  --color-surface-1:     #1A2440;
+  --color-surface-2:     #232E4D;
+  --color-surface-3:     #2D3A5C;
 
-  /* Lines */
-  --color-border:        #232E4A;
-  --color-border-strong: #3A4970;
+  /* Lines — lifted to stay visible against the new surfaces */
+  --color-border:        #2F3B5E;
+  --color-border-strong: #4A5A85;
 
-  /* Ink */
+  /* Ink — unchanged (already optimized for contrast) */
   --color-ink-high:      #F4F1E8;
   --color-ink-mid:       #B8C0D4;
   --color-ink-low:       #6B7593;
   --color-ink-faint:     #404B6B;
 
-  /* Accent */
-  --color-gold:          #C9A961;
-  --color-gold-bright:   #E0BE74;
-  --color-gold-deep:     #8C7333;
+  /* Accent — slight warmth/brightness boost for more presence */
+  --color-gold:          #D4B66E;
+  --color-gold-bright:   #E8C988;
+  --color-gold-deep:     #9C8240;
 
   /* Risk heat map */
   --risk-low:            #4A7C59;
@@ -175,6 +175,18 @@ p + p { margin-top: var(--s-4); }
 
 /* Section heading group */
 .section-head { margin-bottom: var(--s-7); }
+/* Gold hairline divider between consecutive content sections (60px).
+   Aligns to the heading: left for default heads, centered for .centered. */
+.section + .section .section-head::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--color-gold);
+  opacity: 0.6;
+  margin: 0 0 var(--s-6);
+}
+.section + .section .section-head.centered::before { margin-left: auto; margin-right: auto; }
 .section-head .eyebrow { margin-bottom: var(--s-3); }
 .section-head h2,
 .section-head .display { margin-bottom: var(--s-3); }
