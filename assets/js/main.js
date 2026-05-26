@@ -110,15 +110,70 @@
      ----------------------------------------------------------------------- */
   function bindDropdowns() {
     const items = document.querySelectorAll('.nav__item');
+    const MARGIN = 16;
+
+    // Nudge an open mega-menu back inside the viewport if its natural
+    // (centered) position would clip either edge. Trigger-agnostic.
+    function repositionDropdown(menu) {
+      // Reset so we measure the natural centered position, not a stale offset.
+      menu.style.transform = '';
+      menu.style.maxWidth = '';
+
+      // Fallback: if the panel can't fit at all, cap its width first.
+      if (menu.getBoundingClientRect().width > window.innerWidth - MARGIN * 2) {
+        menu.style.maxWidth = `calc(100vw - ${MARGIN * 2}px)`;
+      }
+
+      const rect = menu.getBoundingClientRect();
+      let nudge = 0;
+      if (rect.left < MARGIN) {
+        nudge = MARGIN - rect.left;
+      } else if (rect.right > window.innerWidth - MARGIN) {
+        nudge = (window.innerWidth - MARGIN) - rect.right;
+      }
+
+      if (nudge !== 0) {
+        // Preserve the centering transform; add the horizontal nudge on top.
+        menu.style.transform = `translateX(calc(-50% + ${nudge}px)) translateY(0)`;
+      }
+    }
+
+    function clearDropdown(menu) {
+      menu.style.transform = '';
+      menu.style.maxWidth = '';
+    }
+
     items.forEach((item) => {
       const trigger = item.querySelector('.nav__link');
       const menu = item.querySelector('.dropdown');
       if (!menu || !trigger) return;
-      trigger.addEventListener('focus', () => item.classList.add('is-open'));
-      item.addEventListener('mouseleave', () => item.classList.remove('is-open'));
+
+      // requestAnimationFrame lets the CSS open state commit before we measure.
+      const scheduleReposition = () => requestAnimationFrame(() => repositionDropdown(menu));
+
+      // Hover open is CSS-driven (:hover); we only reposition.
+      item.addEventListener('mouseenter', scheduleReposition);
+      item.addEventListener('mouseleave', () => { item.classList.remove('is-open'); clearDropdown(menu); });
+
+      // Keyboard / focus open.
+      trigger.addEventListener('focus', () => { item.classList.add('is-open'); scheduleReposition(); });
       item.addEventListener('focusout', (e) => {
-        if (!item.contains(e.relatedTarget)) item.classList.remove('is-open');
+        if (!item.contains(e.relatedTarget)) { item.classList.remove('is-open'); clearDropdown(menu); }
       });
+    });
+
+    // Reflow any currently-open dropdown on resize (debounced).
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        items.forEach((item) => {
+          const menu = item.querySelector('.dropdown');
+          if (!menu) return;
+          const isOpen = item.classList.contains('is-open') || item.matches(':hover');
+          if (isOpen) repositionDropdown(menu);
+        });
+      }, 100);
     });
   }
 
