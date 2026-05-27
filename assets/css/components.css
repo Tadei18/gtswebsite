@@ -166,6 +166,7 @@
   border-color: var(--color-border-strong);
 }
 .tile:hover::before { transform: scaleX(1); }
+.tile:hover .tile__title { color: var(--color-gold-bright); }
 
 .tile__num {
   font-family: var(--font-sans);
@@ -178,9 +179,10 @@
 .tile__title {
   font-family: var(--font-serif);
   font-size: var(--t-h3);
-  color: var(--color-ink-high);
+  color: var(--color-gold);
   margin-bottom: var(--s-3);
   letter-spacing: -0.02em;
+  transition: color 200ms ease;
 }
 .tile__body {
   color: var(--color-ink-mid);

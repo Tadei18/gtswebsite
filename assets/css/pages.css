@@ -722,6 +722,8 @@
 .product-block { padding: var(--s-9) 0; border-top: 1px solid var(--color-border); }
 .product-block:first-of-type { border-top: none; }
 .product-block .split { align-items: center; }
+/* Product name — gold serif (eyebrow "Product NN" removed; stays an <h2>). */
+.product-block h2 { color: var(--color-gold); }
 .product-preview {
   background: var(--color-surface-2);
   border: 1px solid var(--color-border);

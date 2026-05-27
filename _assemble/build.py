@@ -207,7 +207,6 @@ def _services_index_body(services):
     tiles = []
     for idx, s in enumerate(services, 1):
         tiles.append(f'''<a href="/services/{s['slug']}/" class="tile has-brackets">
-          <div class="tile__num">{idx:02d} / {s['name'].upper()}</div>
           <h3 class="tile__title">{s['name']}</h3>
           <p class="tile__body">{s['summary']}</p>
           <span class="tile__link">Read more <span class="arrow">→</span></span>
@@ -234,7 +233,6 @@ def _consulting_index_body(consulting):
     tiles = []
     for idx, c in enumerate(consulting, 1):
         tiles.append(f'''<a href="/consulting/{c['slug']}/" class="tile has-brackets">
-          <div class="tile__num">{idx:02d} / {c['name'].upper()}</div>
           <h3 class="tile__title">{c['name']}</h3>
           <p class="tile__body">{c['summary']}</p>
           <span class="tile__link">Read more <span class="arrow">→</span></span>
@@ -1000,7 +998,6 @@ def _intelligence_body():
           <div class="container">
             <div class="split{reverse_class}">
               <div class="reveal">
-                <span class="eyebrow">Product {idx:02d}</span>
                 <h2 style="margin-top:var(--s-3);margin-bottom:var(--s-4);">{p['name']}</h2>
                 <p class="lede mb-5">{p['lede']}</p>
                 {body_html}

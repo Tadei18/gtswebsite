@@ -31,6 +31,9 @@
     'risk-heat-map':            'heatmap',
   };
 
+  // Note: p.number is retained in intelligence.json but intentionally not
+  // rendered (the "Product NN" eyebrow was removed). Re-add a one-line
+  // <span class="eyebrow">Product ${p.number}</span> above the <h2> to restore.
   function productMarkup(p, idx) {
     const splitClass = idx % 2 === 0 ? 'split' : 'split split--reverse';
     const bodyHtml = (p.body || []).map((para) => `<p>${escapeHtml(para)}</p>`).join('');
@@ -48,7 +51,6 @@
         <div class="container">
           <div class="${splitClass}">
             <div class="reveal">
-              <span class="eyebrow">Product ${escapeHtml(p.number)}</span>
               <h2 style="margin-top:var(--s-3);margin-bottom:var(--s-4);">${escapeHtml(p.name)}</h2>
               <p class="lede mb-5">${escapeHtml(p.lede)}</p>
               ${bodyHtml}
