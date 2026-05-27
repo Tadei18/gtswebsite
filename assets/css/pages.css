@@ -315,6 +315,10 @@
 @media (max-width: 768px) { .industries-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .industries-grid { grid-template-columns: 1fr; } }
 
+/* Industries PAGE — sector section name (gold serif heading; numbered
+   eyebrow removed above it). Distinct from the home .industry-tile grid. */
+.industry-sector__name { color: var(--color-gold); }
+
 /* -------------------------------------------------------------------------
    HOME — Methodology timeline
    ------------------------------------------------------------------------- */
@@ -590,6 +594,9 @@
   z-index: 1;
   max-width: 820px;
 }
+/* Detail-page headline — gold, matching the index card titles (numbered
+   eyebrow removed above it). */
+.service-hero__inner h1 { color: var(--color-gold); }
 .service-hero__inner .lede {
   font-size: 1.15rem;
   max-width: 64ch;
@@ -762,12 +769,13 @@
   padding: 4px 12px;
 }
 .tier__name {
-  font-family: var(--font-sans);
-  font-size: var(--t-eyebrow);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  text-transform: none;
   color: var(--color-gold);
+  margin-bottom: var(--s-3);
 }
 .tier__price {
   font-family: var(--font-serif);

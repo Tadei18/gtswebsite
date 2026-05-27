@@ -120,6 +120,9 @@
   margin-bottom: var(--s-3);
   letter-spacing: -0.02em;
 }
+/* Gold variant — scoped opt-in (e.g. About values), since .card__title is
+   shared by related-service, careers, and other cards that stay ink-high. */
+.card__title--gold { color: var(--color-gold); }
 .card__body { color: var(--color-ink-mid); margin-bottom: var(--s-4); }
 .card__link {
   font-family: var(--font-sans);

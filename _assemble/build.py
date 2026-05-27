@@ -142,7 +142,6 @@ def service_detail_body(item, kind='services', counter=1, total=12):
           <a href="/{kind}/">{crumbs_label}</a> <span class="sep">/</span>
           <span>{item['name']}</span>
         </div>
-        <span class="eyebrow">{label}</span>
         <h1 style="margin:var(--s-4) 0 var(--s-5);">{item['name']}</h1>
         <p class="lede">{item['lede']}</p>
         <div class="btn-group">
@@ -622,7 +621,7 @@ def _about_body():
               <circle cx="16" cy="16" r="6"/>
               <path d="M16 4v4M16 24v4M4 16h4M24 16h4M7 7l3 3M22 22l3 3M25 7l-3 3M10 22l-3 3"/>
             </svg>
-            <h3 class="card__title">Innovation</h3>
+            <h3 class="card__title card__title--gold">Innovation</h3>
             <p class="card__body">We continuously invest in advanced technologies, cutting-edge methodologies, and creative problem-solving approaches to stay ahead of emerging security challenges. By embracing innovation, we ensure that our solutions are not only effective but also adaptive to the ever-changing security landscape.</p>
           </div>
           <div class="card reveal" data-delay="2">
@@ -630,7 +629,7 @@ def _about_body():
               <circle cx="16" cy="12" r="5"/>
               <path d="M6 28c0-5 4-9 10-9s10 4 10 9"/>
             </svg>
-            <h3 class="card__title">Client Focus</h3>
+            <h3 class="card__title card__title--gold">Client Focus</h3>
             <p class="card__body">Our clients are at the heart of our operations. We take pride in delivering personalized, responsive, and reliable services that address each client's unique needs. Building long-term relationships based on trust and satisfaction is our top priority.</p>
           </div>
           <div class="card reveal" data-delay="3">
@@ -638,14 +637,14 @@ def _about_body():
               <path d="M16 4l11 4v8c0 7-5 12-11 12S5 23 5 16V8l11-4z"/>
               <path d="M11 16l4 4 7-7"/>
             </svg>
-            <h3 class="card__title">Integrity</h3>
+            <h3 class="card__title card__title--gold">Integrity</h3>
             <p class="card__body">We uphold the highest ethical standards in all our dealings. Transparency, honesty, and accountability are integral to our business, ensuring our clients can rely on us as a trusted partner in safeguarding their interests.</p>
           </div>
           <div class="card reveal" data-delay="4">
             <svg class="icon icon--lg" viewBox="0 0 32 32" fill="none" stroke="#C9A961" stroke-width="1.5" aria-hidden="true" style="margin-bottom:16px">
               <polygon points="16,4 20,12 28,13 22,19 24,28 16,24 8,28 10,19 4,13 12,12"/>
             </svg>
-            <h3 class="card__title">Excellence</h3>
+            <h3 class="card__title card__title--gold">Excellence</h3>
             <p class="card__body">We are committed to excellence in every aspect of our operations. From strategy development to service delivery, we strive for perfection and continuous improvement, ensuring we consistently exceed client expectations.</p>
           </div>
         </div>
@@ -900,8 +899,7 @@ def _industries_body():
       <div class="container">
         <div class="split">
           <div class="reveal">
-            <span class="eyebrow">{idx:02d} / Sector</span>
-            <h2 style="margin-top:var(--s-3);margin-bottom:var(--s-5);">{ind['name']}</h2>
+            <h2 class="industry-sector__name" style="margin-top:var(--s-3);margin-bottom:var(--s-5);">{ind['name']}</h2>
             <p>{ind['challenges']}</p>
             <p style="margin-top:var(--s-4)">{ind['approach']}</p>
           </div>
