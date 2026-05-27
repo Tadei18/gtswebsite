@@ -173,6 +173,11 @@ p + p { margin-top: var(--s-4); }
 }
 .eyebrow--bare::before { content: none; }
 
+/* Hero / section-header variant — sits ~2 steps below the headline, closer to
+   body text. Applied to page-hero and major section-head eyebrows. Card,
+   byline, nav, and other metadata eyebrows keep the smaller --t-eyebrow size. */
+.eyebrow--hero { font-size: 0.875rem; }
+
 /* Section heading group */
 .section-head { margin-bottom: var(--s-7); }
 /* Gold hairline divider between consecutive content sections (60px).

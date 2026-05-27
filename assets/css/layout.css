@@ -132,11 +132,14 @@
 }
 .pre-header__left  { display: flex; align-items: center; }
 .pre-header__right { display: flex; align-items: center; gap: var(--s-4); flex-shrink: 0; }
-.pre-header__right .contact { color: var(--color-ink-low); }
-.pre-header__right .contact:hover { color: var(--color-gold); }
+/* Gold contact row — email, phone, separator, and social icons match the
+   gold eyebrow on the left. Icons are inline SVG (stroke/fill: currentColor),
+   so the link colour drives them. Hover brightens. */
+.pre-header__right .contact { color: var(--color-gold); transition: color 200ms ease; }
+.pre-header__right .contact:hover { color: var(--color-gold-bright); }
 .pre-header__right .socials { display: flex; gap: var(--s-3); }
-.pre-header__right .socials a { color: var(--color-ink-low); display: inline-flex; }
-.pre-header__right .socials a:hover { color: var(--color-gold); }
+.pre-header__right .socials a { color: var(--color-gold); display: inline-flex; transition: color 200ms ease; }
+.pre-header__right .socials a:hover { color: var(--color-gold-bright); }
 
 @media (max-width: 900px) {
   /* Phone is the most actionable contact on mobile — keep it, drop email + separator */
@@ -712,20 +715,26 @@
 }
 .footer__newsletter button:hover { color: var(--color-gold-bright); }
 
+/* Bottom strip — gold secondary treatment (the 1px gold hairline above is
+   unchanged). Per-element opacity sets the hierarchy; no container opacity so
+   the values stay accurate for contrast (all pass WCAG AA on surface-1). */
 .footer__bottom {
   border-top: 1px solid var(--color-gold);
-  opacity: 0.9;
   padding-top: var(--s-5);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--s-4);
   font-size: var(--t-xs);
-  color: var(--color-ink-low);
+  color: var(--color-gold);
 }
-.footer__bottom a { color: var(--color-ink-low); }
-.footer__bottom a:hover { color: var(--color-gold); }
+/* Copyright — gold, reads as secondary */
+.footer__bottom > span { color: var(--color-gold); opacity: 0.85; }
+.footer__bottom a { color: var(--color-gold); transition: color 200ms ease; }
+.footer__bottom a:hover { color: var(--color-gold-bright); }
 .footer__legal { display: flex; gap: var(--s-4); flex-wrap: wrap; }
+/* "Built with discretion." — most secondary; 0.8 (not 0.7) to clear AA */
+.footer__legal > span:last-child { color: var(--color-gold); opacity: 0.8; font-style: italic; }
 
 /* -------------------------------------------------------------------------
    CTA band
