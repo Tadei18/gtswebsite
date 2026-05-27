@@ -136,6 +136,18 @@ h4 { font-size: var(--t-h4); font-weight: 600; }
   color: var(--color-ink-high);
 }
 
+/* Balance headline wrapping to avoid orphaned last words (e.g. the services
+   index hero). Progressive enhancement — unsupported browsers fall back to
+   default wrapping, so no regression. */
+h1, h2,
+.display,
+.page-hero h1,
+.service-hero h1,
+.consulting-hero h1,
+.hero__inner .display {
+  text-wrap: balance;
+}
+
 p { color: var(--color-ink-mid); }
 p + p { margin-top: var(--s-4); }
 
@@ -144,6 +156,12 @@ p + p { margin-top: var(--s-4); }
   line-height: 1.6;
   color: var(--color-ink-mid);
   max-width: 64ch;
+}
+
+/* Body copy — "pretty" avoids last-line orphans without balance's cost. */
+.lede,
+p {
+  text-wrap: pretty;
 }
 
 .mono {
