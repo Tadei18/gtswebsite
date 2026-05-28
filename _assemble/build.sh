@@ -3,6 +3,7 @@
 # Usage:
 #   ./build.sh OUT_PATH TITLE DESC CANONICAL [EXTRA_HEAD] [EXTRA_SCRIPTS] < BODY_HTML
 # Reads body content from stdin.
+#Adjusted Parameters
 set -euo pipefail
 
 OUT="$1"
